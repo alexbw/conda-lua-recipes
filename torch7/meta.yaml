@@ -1,0 +1,19 @@
+package:
+  name: lua-torch
+  version: 7
+
+source:
+  fn: LuaJIT-2.0.3.tar.gz
+  url: http://luajit.org/download/LuaJIT-2.0.3.tar.gz
+  md5: f14e9104be513913810cd59c8c658dc0
+
+build:
+  number: 0
+
+test:
+  commands:
+    - luajit -v
+
+about:
+  home: http://luajit.org/
+  license: MIT
