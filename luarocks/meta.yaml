@@ -1,0 +1,25 @@
+package:
+  name: luarocks
+  version: 2.2.1
+
+source:
+  fn: luarocks-2.2.1.tar.gz
+  url: http://luarocks.org/releases/luarocks-2.2.1.tar.gz
+  md5: 718a0e8c257aace3ec16ebc2cfe9c696
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - luajit=2.0
+  run:
+    - luajit=2.0
+
+test:
+  commands:
+    - luarocks help
+
+about:
+  home: http://www.luarocks.org/
+  license: MIT
