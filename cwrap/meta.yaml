@@ -1,0 +1,21 @@
+package:
+  name: lua-cwrap
+  version: 1.0
+
+source:
+  git_url: git@github.com:torch/cwrap.git
+  git_rev: 6b7bb2a9f7a002e50b6d1dfc3e653ecdf4c01f4a
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+  run:
+    - luajit
+
+about:
+  home: https://github.com/torch/paths
+  license: BSD

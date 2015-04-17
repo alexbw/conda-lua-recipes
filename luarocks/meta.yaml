@@ -12,9 +12,9 @@ build:
 
 requirements:
   build:
-    - luajit=2.0
+    - luajit
   run:
-    - luajit=2.0
+    - luajit
 
 test:
   commands:

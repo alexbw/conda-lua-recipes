@@ -2,14 +2,13 @@
 # - Should use Lua version to set luarocks location. e.g.: lib/luarocks -> /lib/luajit2.0/luarocks
 # - Should set rocks-tree to be "user" instead of "system". Vibes better with the conda approach.
 
-LUA_DIR=$PWD
 
 ./configure --prefix=$PREFIX \
-			--sysconfdir=$PREFIX/lib/luarocks \
-			--rocks-tree=$PREFIX/lib/luarocks \
-			--with-lua=$PREFIX \
+			--sysconfdir=$PREFIX/share/lua/ \
 			--force-config \
-			--lua-version=5.1 \
 			--with-lua-include=$PREFIX/include/luajit-2.0
-make build
-make install
+			# --rocks-tree=$PREFIX \
+			# --with-lua=$PREFIX \
+			# --lua-version=5.1 \
+			# --versioned-rocks-dir
+make bootstrap
