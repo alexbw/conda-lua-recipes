@@ -1,0 +1,30 @@
+package:
+  name: lua-trepl
+  version: scm1
+
+source:
+  git_url: git@github.com:torch/trepl.git
+  git_rev: 468aa304ba9e3dae9a836b553614f14754b563f8
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - lua-torch7
+    - lua-penlight
+  run:
+    - luajit
+    - lua-torch7
+    - lua-penlight
+
+test:
+  commands:
+    - luajit -e "require 'trepl'"
+
+about:
+  home: https://github.com/torch/trepl
+  license: Unlicensed

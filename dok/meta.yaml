@@ -1,0 +1,28 @@
+package:
+  name: lua-dok
+  version: scm1
+
+source:
+  git_url: git@github.com:torch/dok.git
+  git_rev: 6e84960badcb5da597c8334e9cd63985da8c187b
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - lua-sundown
+  run:
+    - luajit
+    - lua-sundown
+
+test:
+  commands:
+    - luajit -e "require 'dok'"
+
+about:
+  home: https://github.com/torch/dok
+  license: Unlicensed
