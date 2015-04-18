@@ -1,0 +1,47 @@
+package:
+  name: itorch
+  version: 1.0
+
+source:
+  git_url: git@github.com:facebook/iTorch.git
+  git_rev: 22c8b5412c173c0fb84da8e627c167ed9ae2449d
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - lua-torch7
+    - lua-luafilesystem
+    - lua-penlight
+    - lua-cjson
+    - lua-uuid
+    - lua-base64
+    - lua-env
+    - lua-image
+    - lua-lzmq
+    - ipython
+  run:
+    - luajit
+    - lua-torch7
+    - lua-luafilesystem
+    - lua-penlight
+    - lua-cjson
+    - lua-uuid
+    - lua-base64
+    - lua-env
+    - lua-image
+    - lua-lzmq
+    - ipython
+
+test:
+  commands:
+    - iTorch --help
+
+about:
+  home: https://github.com/torch/xlua
+  license: BSD

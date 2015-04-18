@@ -1,0 +1,41 @@
+package:
+  name: lua-image
+  version: 1.0.1
+
+source:
+  git_url: git@github.com:torch/image.git
+  # git_tag: 1.0.1-0
+  git_rev: 56fda35642694a1adea50cd9276d042fb0ae1dc6
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - lua-torch7
+    - lua-xlua
+    - lua-sys
+    - lua-dok
+    - jpeg
+    - libpng
+    - zlib
+  run:
+    - luajit
+    - lua-torch7
+    - lua-xlua
+    - lua-sys
+    - lua-dok
+    - jpeg
+    - libpng
+    - zlib
+
+test:
+  commands:
+    - luajit -e "require 'image'"
+
+about:
+  home: https://github.com/torch/image
+  license: BSD

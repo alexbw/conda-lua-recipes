@@ -1,0 +1,28 @@
+package:
+  name: lua-lzmq
+  version: 0.4.2
+
+source:
+  git_url: git@github.com:zeromq/lzmq.git
+  git_tag: v0.4.2
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - lua-llthreads2
+  run:
+    - luajit
+    - lua-llthreads2
+
+test:
+  commands:
+    - luajit -e "require 'lzmq'"
+
+about:
+  home: https://github.com/zeromq/lzmq
+  license: MIT/X11

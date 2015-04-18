@@ -1,0 +1,30 @@
+package:
+  name: lua-xlua
+  version: 1.0
+
+source:
+  git_url: git@github.com:torch/xlua.git
+  git_tag: 1.0-0
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - lua-torch7
+    - lua-sys
+  run:
+    - luajit
+    - lua-torch7
+    - lua-sys
+
+test:
+  commands:
+    - luajit -e "require 'xlua'"
+
+about:
+  home: https://github.com/torch/xlua
+  license: BSD

@@ -1,6 +1,6 @@
 package:
   name: lua-trepl
-  version: scm1
+  version: 1.0
 
 source:
   git_url: git@github.com:torch/trepl.git

@@ -1,0 +1,32 @@
+package:
+  name: lua-env
+  version: 1.0
+
+source:
+  git_url: git@github.com:torch/env.git
+  git_rev: 40d6fa037e52dca9eab161ab8f1e5496a52c3c1e
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - lua-torch7
+    - lua-dok
+    - lua-gnuplot
+  run:
+    - luajit
+    - lua-torch7
+    - lua-gnuplot
+    - lua-dok
+
+test:
+  commands:
+    - luajit -e "require 'env'"
+
+about:
+  home: https://github.com/torch/env
+  license: BSD
