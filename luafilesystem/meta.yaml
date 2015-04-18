@@ -1,6 +1,6 @@
 package:
   name: lua-luafilesystem
-  version: 0.1
+  version: 1.6.3
 
 source:
   git_url: git@github.com:keplerproject/luafilesystem

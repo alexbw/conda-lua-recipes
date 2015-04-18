@@ -1,6 +1,6 @@
 package:
   name: lua-penlight
-  version: 0.1
+  version: 1.3.2
 
 source:
   git_url: git@github.com:stevedonovan/Penlight.git
