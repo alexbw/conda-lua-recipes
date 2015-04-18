@@ -16,6 +16,10 @@ requirements:
   run:
     - luajit
 
+test:
+  commands:
+    - luajit -e "require 'cwrap'"
+
 about:
   home: https://github.com/torch/paths
   license: BSD
