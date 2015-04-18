@@ -10,8 +10,6 @@ source:
 build:
   number: 0
   detect_binary_files_with_prefix: true
-  has_prefix_files: 
-    - share/lua/config-5.1.lua
 
 requirements:
   build:
@@ -21,7 +19,7 @@ requirements:
 
 test:
   commands:
-    - luarocks help
+    - luarocks --lr-path
 
 about:
   home: http://www.luarocks.org/

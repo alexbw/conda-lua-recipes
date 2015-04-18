@@ -1,18 +1,32 @@
 package:
-  name: lua-torch
-  version: 7
+  name: lua-torch7
+  version: 1.0
 
 source:
-  fn: LuaJIT-2.0.3.tar.gz
-  url: http://luajit.org/download/LuaJIT-2.0.3.tar.gz
-  md5: f14e9104be513913810cd59c8c658dc0
+  git_url: https://github.com/torch/torch7.git
+  git_rev: b408d59196f0a674c9605efe9ab2aa901fbe1301
 
 build:
   number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - lua-cwrap
+    - lua-paths
+    - cmake
+    - mkl-rt
+  run:
+    - luajit
+    - lua-cwrap
+    - lua-paths
+    - mkl-rt
 
 test:
   commands:
-    - luajit -v
+    - luajit -e "require 'torch'"
 
 about:
   home: http://luajit.org/
