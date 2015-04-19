@@ -1,0 +1,29 @@
+package:
+  name: lua-fftw3
+  version: 1.0
+
+source:
+  git_url: git@github.com:soumith/fftw3-ffi.git
+  git_rev: ce8883364201b0741d3d51a0f305f457778a6671
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - fftw
+  run:
+    - luajit
+    - luarocks
+    - fftw
+
+test:
+  commands:
+    - luajit -e "require 'fftw3'"
+
+about:
+  home: https://github.com/soumith/fftw3-ffi
+  license: BSD

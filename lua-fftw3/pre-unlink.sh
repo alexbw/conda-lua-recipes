@@ -1,0 +1,1 @@
+luarocks remove fftw3
