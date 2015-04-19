@@ -1,0 +1,32 @@
+package:
+  name: lua-nnx
+  version: 0.1
+
+source:
+  git_url: git@github.com:clementfarabet/lua---nnx.git
+  git_rev: 3642beecfba9bee13e4ee1e109f7ef6da41a0452
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - lua-torch7
+    - lua-nn
+    - lua-xlua
+  run:
+    - luajit
+    - lua-torch7
+    - lua-nn
+    - lua-xlua
+
+test:
+  commands:
+    - luajit -e "require 'nnx'"
+
+about:
+  home: https://github.com/clementfarabet/lua---nnx
+  license: BSD

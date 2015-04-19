@@ -1,0 +1,28 @@
+package:
+  name: lua-sdl2
+  version: 1.0
+
+source:
+  git_url: git@github.com:torch/sdl2-ffi.git
+  git_rev: 2e4c9002be0cf523b3f28755b1cf855d3553677f
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - sdl2
+  run:
+    - luajit
+    - sdl2
+
+test:
+  commands:
+    - luajit -e "require 'sdl2'"
+
+about:
+  home: https://github.com/torch/sdl2-ffi
+  license: BSD

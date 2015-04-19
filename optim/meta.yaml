@@ -1,0 +1,30 @@
+package:
+  name: lua-optim
+  version: 1.0.5
+
+source:
+  git_url: git@github.com:torch/optim.git
+  git_rev: 446de4f45f3e901adc889f4d6a49051028e437e8
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - lua-torch7
+    - lua-xlua
+  run:
+    - luajit
+    - lua-torch7
+    - lua-xlua
+
+test:
+  commands:
+    - luajit -e "require 'optim'"
+
+about:
+  home: https://github.com/torch/optim
+  license: BSD
