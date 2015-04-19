@@ -1,0 +1,32 @@
+package:
+  name: lua-cunn
+  version: 1.0
+
+source:
+  git_url: git@github.com:torch/cunn.git
+  git_rev: 28f41e374777c708d9871385366b1fc6f3f195bd
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - lua-cutorch7
+    - lua-torch7
+    - lua-nn
+  run:
+    - luajit
+    - lua-cutorch7
+    - lua-torch7
+    - lua-nn
+
+test:
+  commands:
+    - luajit -e "require 'cunn'"
+
+about:
+  home: https://github.com/torch/cunn
+  license: BSD

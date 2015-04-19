@@ -1,0 +1,29 @@
+package:
+  name: lua-cutorch7
+  version: 1.0
+
+source:
+  git_url: git@github.com:torch/cutorch.git
+  git_rev: 0903d5763025d163c575b11d5a51ce3d760c3ad1
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - lua-torch7
+    - cmake
+  run:
+    - luajit
+    - lua-torch7
+
+test:
+  commands:
+    - luajit -e "require 'cutorch'"
+
+about:
+  home: https://github.com/torch/cutorch
+  license: BSD
