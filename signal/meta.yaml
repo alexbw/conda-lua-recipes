@@ -1,0 +1,30 @@
+package:
+  name: lua-signal
+  version: 0.1
+
+source:
+  git_url: git@github.com:soumith/torch-signal.git
+  git_rev: e408a245023fe8c9fa18356480d0a3f18feb8b7d
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - lua-torch7
+    - lua-fftw3
+  run:
+    - luajit
+    - lua-torch7
+    - lua-fftw3
+
+test:
+  commands:
+    - luajit -e "require 'signal'"
+
+about:
+  home: https://github.com/soumith/torch-signal
+  license: BSD

@@ -1,0 +1,37 @@
+package:
+  name: lua-audio
+  version: 0.1
+
+source:
+  git_url: git@github.com:soumith/lua---audio.git
+  git_rev: ad087af2eee9e0d80ec7ce9261bae109e108ab92
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - lua-torch7
+    - lua-xlua
+    - lua-sys
+    - fftw
+    - sox
+  run:
+    - luajit
+    - lua-torch7
+    - lua-xlua
+    - lua-sys
+    - fftw
+    - sox
+    - lua-dok
+
+test:
+  commands:
+    - luajit -e "require 'audio'"
+
+about:
+  home: https://github.com/soumith/lua---audio
+  license: BSD
