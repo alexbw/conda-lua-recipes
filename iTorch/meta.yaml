@@ -38,10 +38,10 @@ requirements:
     - lua-lzmq
     - ipython
 
-test:
-  commands:
-    - iTorch --help
+# test:
+#   commands:
+#     - itorch --help
 
 about:
-  home: https://github.com/torch/xlua
+  home: https://github.com/facebook/itorch
   license: BSD
