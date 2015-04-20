@@ -15,3 +15,7 @@ git clone git@github.com:whetlab/lstm.git
 cd lstm
 th lstm/main.lua
 ```
+
+What I'm missing:
+ - iTorch (github.com/facebook/iTorch)
+ - qtlua (falling out of favor, I think, but still useful: https://github.com/torch/qtlua)
