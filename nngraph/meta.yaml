@@ -1,0 +1,32 @@
+package:
+  name: lua-nngraph
+  version: 1.0
+
+source:
+  git_url: git@github.com:torch/nngraph.git
+  git_rev: b7afcc2ea1194b38ba715178981a12190543436f
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - lua-torch7
+    - lua-nn
+    - lua-graph
+  run:
+    - luajit
+    - lua-torch7
+    - lua-nn
+    - lua-graph
+
+test:
+  commands:
+    - luajit -e "require 'nngraph'"
+
+about:
+  home: https://github.com/torch/nngraph
+  license: BSD
