@@ -1,1 +1,1 @@
-luarocks install $(find . -iname '*.rockspec' -d 2 | head -n 1)
+luarocks install rocks/paths-scm-1.rockspec

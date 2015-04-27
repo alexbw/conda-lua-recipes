@@ -2,4 +2,4 @@
 luarocks-admin make_manifest
 
 # Install torch
-luarocks install $(find . -iname '*.rockspec' -d 2 | head -n 1)
+luarocks install rocks/dok-scm-1.rockspec

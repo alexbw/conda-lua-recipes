@@ -1,1 +1,1 @@
-luarocks install $(find . -iname '*.rockspec' -d 2 | head -n 1)
+luarocks install rocks/cwrap-scm-1.rockspec 
