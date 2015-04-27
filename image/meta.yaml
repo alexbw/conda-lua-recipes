@@ -8,7 +8,7 @@ source:
   git_rev: 56fda35642694a1adea50cd9276d042fb0ae1dc6
 
 build:
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -23,7 +23,8 @@ requirements:
     - libpng
     - zlib
   run:
-    - luajit
+    - luaji
+    - luarocks
     - lua-torch7
     - lua-xlua
     - lua-sys

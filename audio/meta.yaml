@@ -7,7 +7,7 @@ source:
   git_rev: ad087af2eee9e0d80ec7ce9261bae109e108ab92
 
 build:
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -21,6 +21,7 @@ requirements:
     - sox
   run:
     - luajit
+    - luarocks
     - lua-torch7
     - lua-xlua
     - lua-sys

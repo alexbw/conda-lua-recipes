@@ -7,7 +7,7 @@ source:
   git_rev: ce8883364201b0741d3d51a0f305f457778a6671
 
 build:
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:

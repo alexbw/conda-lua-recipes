@@ -7,7 +7,7 @@ source:
   git_rev: 2e4c9002be0cf523b3f28755b1cf855d3553677f
 
 build:
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -17,6 +17,7 @@ requirements:
     - sdl2
   run:
     - luajit
+    - luarocks
     - sdl2
 
 test:

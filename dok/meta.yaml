@@ -7,7 +7,7 @@ source:
   git_rev: 6e84960badcb5da597c8334e9cd63985da8c187b
 
 build:
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -17,6 +17,7 @@ requirements:
     - lua-sundown
   run:
     - luajit
+    - luarocks
     - lua-sundown
 
 test:
