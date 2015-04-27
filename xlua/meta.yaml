@@ -7,7 +7,7 @@ source:
   git_tag: 1.0-0
 
 build:
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -17,6 +17,7 @@ requirements:
     - lua-torch7
     - lua-sys
   run:
+    - luarocks
     - luajit
     - lua-torch7
     - lua-sys

@@ -18,6 +18,7 @@ requirements:
     - cmake
   run:
     - luajit
+    - luarocks
     - lua-torch7
 
 test:

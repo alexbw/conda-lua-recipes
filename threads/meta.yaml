@@ -7,7 +7,7 @@ source:
   git_rev: d223e9d60ed04f91016867065a5ef7575d337dce
 
 build:
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -19,6 +19,7 @@ requirements:
     - lua-sdl2
   run:
     - luajit
+    - luarocks
     - lua-torch7
     - sdl2
     - lua-sdl2

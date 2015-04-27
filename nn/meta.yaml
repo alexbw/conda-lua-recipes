@@ -7,7 +7,7 @@ source:
   git_rev: f788c4f9110cd22dadbe143c205d83e1f92478e0
 
 build:
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -17,6 +17,7 @@ requirements:
     - lua-torch7
   run:
     - luajit
+    - luarocks
     - lua-torch7
 
 test:

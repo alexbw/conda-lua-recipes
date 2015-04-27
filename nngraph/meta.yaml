@@ -7,7 +7,7 @@ source:
   git_rev: b7afcc2ea1194b38ba715178981a12190543436f
 
 build:
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -19,6 +19,7 @@ requirements:
     - lua-graph
   run:
     - luajit
+    - luarocks
     - lua-torch7
     - lua-nn
     - lua-graph

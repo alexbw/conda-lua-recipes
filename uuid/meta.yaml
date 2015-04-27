@@ -7,7 +7,7 @@ source:
   git_tag: version_0.2.0
 
 build:
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -16,6 +16,7 @@ requirements:
     - luarocks
   run:
     - luajit
+    - luarocks
 
 test:
   commands:

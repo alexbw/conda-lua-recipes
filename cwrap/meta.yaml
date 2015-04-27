@@ -15,6 +15,7 @@ requirements:
     - luarocks
   run:
     - luajit
+    - luarocks
 
 test:
   commands:

@@ -7,7 +7,7 @@ source:
   git_rev: 812223802c9c9f359b46478b7bbb1d5b154a88ac
 
 build:
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -16,6 +16,7 @@ requirements:
     - luarocks
   run:
     - luajit
+    - luarocks
 
 test:
   commands:
