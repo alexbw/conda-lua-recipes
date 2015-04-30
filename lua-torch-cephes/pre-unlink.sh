@@ -1,1 +1,1 @@
-luarocks remove cephes
+$PREFIX/bin/luarocks remove cephes
