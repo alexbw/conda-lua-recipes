@@ -1,1 +1,1 @@
-luarocks remove randomkit
+$PREFIX/bin/luarocks remove randomkit

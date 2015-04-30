@@ -1,1 +1,1 @@
-luarocks remove torch7
+$PREFIX/bin/luarocks remove torch7
