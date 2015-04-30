@@ -1,1 +1,1 @@
-luarocks remove cwrap
+$PREFIX/bin/luarocks remove cwrap

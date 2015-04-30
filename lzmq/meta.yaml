@@ -15,10 +15,12 @@ requirements:
     - luajit
     - luarocks
     - lua-llthreads2
+    - zeromq
   run:
     - luajit
     - luarocks
     - lua-llthreads2
+    - zeromq
 
 test:
   commands:
