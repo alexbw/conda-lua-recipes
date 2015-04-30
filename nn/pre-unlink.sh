@@ -1,1 +1,1 @@
-luarocks remove nn
+$PREFIX/bin/luarocks remove nn
