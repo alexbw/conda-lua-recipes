@@ -1,0 +1,31 @@
+package:
+  name: lua-torch-randomkit
+  version: 0.1
+
+source:
+  git_url: git@github.com:deepmind/torch-randomkit.git
+  git_rev: a850446cd3949e9887051e6b4778f9df74ec39da
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - luajit
+    - luarocks
+    - lua-torch7
+    - lua-torch-cephes
+  run:
+    - luajit
+    - luarocks
+    - lua-torch7
+    - lua-torch-cephes
+
+test:
+  commands:
+    - luajit -e "require 'torch'; require 'randomkit'"
+
+about:
+  home: https://github.com/deepmind/torch-randomkit
+  license: BSD
