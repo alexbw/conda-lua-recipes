@@ -1,1 +1,1 @@
-luarocks remove sys
+$PREFIX/bin/luarocks remove sys

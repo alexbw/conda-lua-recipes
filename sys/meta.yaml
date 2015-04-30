@@ -7,7 +7,7 @@ source:
   git_tag: 1.1-0
 
 build:
-  number: 1
+  number: 2
   detect_binary_files_with_prefix: true
 
 requirements:
