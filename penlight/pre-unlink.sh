@@ -1,1 +1,1 @@
-luarocks remove penlight
+$PREFIX/bin/luarocks remove penlight

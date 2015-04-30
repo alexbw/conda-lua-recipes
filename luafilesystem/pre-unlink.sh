@@ -1,1 +1,1 @@
-luarocks remove luafilesystem
+$PREFIX/bin/luarocks remove luafilesystem
