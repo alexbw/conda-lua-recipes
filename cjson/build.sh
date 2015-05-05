@@ -2,4 +2,4 @@
 $PREFIX/bin/luarocks-admin make_manifest
 
 # Install torch
-luarocks install lua-cjson-2.1.0-1.rockspec
+$PREFIX/bin/luarocks install lua-cjson-2.1.0-1.rockspec

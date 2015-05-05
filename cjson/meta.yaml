@@ -8,7 +8,7 @@ source:
   md5: 24f270663e9f6ca8ba2a02cef19f7963
 
 build:
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -17,6 +17,7 @@ requirements:
     - luarocks
   run:
     - luajit
+    - luarocks
 
 test:
   commands:
