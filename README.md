@@ -17,6 +17,5 @@ th lstm/main.lua
 ```
 
 What I'm missing:
+ - Support for multiple Lua versions (everything is hardcoded to LuaJIT. 2.0 vs 2.1 would work, but not Lua 5.x right now. This sounds like a good weekend hacking project, if I can get ahold of one of the binstar developers and pick his/her brain).
  - iTorch (https://github.com/facebook/iTorch)
- - qtlua (falling out of favor, I think, but still useful: https://github.com/torch/qtlua)
- - Support for multiple Lua versions (everything is hardcoded to LuaJIT. 2.0 vs 2.1 would work, but not Lua 5.x right now).
