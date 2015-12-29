@@ -1,1 +1,0 @@
-luarocks remove llthreads2

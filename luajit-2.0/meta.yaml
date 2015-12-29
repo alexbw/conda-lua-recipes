@@ -1,11 +1,11 @@
 package:
   name: luajit
-  version: 2.0.3
+  version: 2.0.4
 
 source:
-  fn: LuaJIT-2.0.3.tar.gz
-  url: http://luajit.org/download/LuaJIT-2.0.3.tar.gz
-  md5: f14e9104be513913810cd59c8c658dc0
+  fn: LuaJIT-2.0.4.tar.gz
+  url: http://luajit.org/download/LuaJIT-2.0.4.tar.gz
+  md5: dd9c38307f2223a504cbfb96e477eca0
 
 build:
   number: 1
@@ -17,4 +17,5 @@ test:
 
 about:
   home: http://luajit.org/
+  summary: A Just-In-Time Compiler for Lua
   license: MIT

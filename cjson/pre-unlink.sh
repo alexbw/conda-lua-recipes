@@ -1,1 +1,0 @@
-luarocks remove lua-cjson
