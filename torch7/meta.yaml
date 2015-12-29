@@ -4,10 +4,10 @@ package:
 
 source:
   git_url: https://github.com/torch/torch7.git
-  git_rev: b408d59196f0a674c9605efe9ab2aa901fbe1301
+  git_rev: a0b2db6f0d0a0657ddf1f4608d973138a58830ad
 
 build:
-  number: 1
+  number: 2
   detect_binary_files_with_prefix: true
 
 requirements:

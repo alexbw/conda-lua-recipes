@@ -4,10 +4,10 @@ package:
 
 source:
   git_url: git@github.com:facebook/iTorch.git
-  git_rev: 22c8b5412c173c0fb84da8e627c167ed9ae2449d
+  git_rev: f111f6d015ec518172b5284718384ead1ae49174
 
 build:
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: true
 
 
@@ -24,7 +24,8 @@ requirements:
     - lua-env
     - lua-image
     - lua-lzmq
-    - ipython
+    - lua-crypto
+    - ipython >=3.0
   run:
     - luajit
     - lua-torch7
@@ -36,11 +37,12 @@ requirements:
     - lua-env
     - lua-image
     - lua-lzmq
-    - ipython
+    - lua-crypto
+    - ipython >=3.0
 
-# test:
-#   commands:
-#     - itorch --help
+test:
+  commands:
+    - itorch --help
 
 about:
   home: https://github.com/facebook/itorch

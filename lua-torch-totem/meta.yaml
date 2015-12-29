@@ -4,10 +4,10 @@ package:
 
 source:
   git_url: git@github.com:deepmind/torch-totem.git
-  git_rev: 369f185cdaf22f0738ce31d794eb445c5339b271
+  git_rev: 0e848993b8e357cb77b154501de063f307a719c0
 
 build:
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:

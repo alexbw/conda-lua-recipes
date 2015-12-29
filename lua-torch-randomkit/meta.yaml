@@ -3,11 +3,11 @@ package:
   version: 0.1
 
 source:
-  git_url: git@github.com:deepmind/torch-randomkit.git
-  git_rev: a850446cd3949e9887051e6b4778f9df74ec39da
+  git_url: git@github.com:alexbw/torch-randomkit.git
+  git_rev: aef369919b7346a702c11adbc5d462b9ad33cb94
 
 build:
-  number: 1
+  number: 2
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -24,7 +24,7 @@ requirements:
 
 test:
   commands:
-    - luajit -e "require 'torch'; require 'randomkit'"
+    - luajit -e "require 'randomkit'"
 
 about:
   home: https://github.com/deepmind/torch-randomkit
