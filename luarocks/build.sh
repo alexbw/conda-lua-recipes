@@ -1,11 +1,9 @@
 # TODO
-# - Should use Lua version to set luarocks location. e.g.: lib/luarocks -> /lib/luajit2.0/luarocks
-# - Should set rocks-tree to be "user" instead of "system". Vibes better with the conda approach.
+# - Would be good if luarocks would offer the ability to use only a user rockspec, instead of system.
+#   (Using system-only rockspec with --force-config flag installs packages with restrictive privileges)
 
 ./configure --prefix=$PREFIX \
 			--sysconfdir=$PREFIX/share/lua/ \
-			--with-lua-include=$LUA_INCLUDE_DIR
-			# --rocks-tree=$PREFIX \
-			# --force-config \
-			# --versioned-rocks-dir
+			--with-lua-include=$LUA_INCLUDE_DIR \
+			--rocks-tree=$PREFIX
 make bootstrap

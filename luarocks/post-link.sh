@@ -1,15 +1,9 @@
-# remove the soft-link to versioned luajit
-# replace it with a small script
-
+echo "============================================================"
+echo "For Lua to find modules installed with luarocks, "
+echo "you should update your environment variables"
+echo "Add this to your .bashrc, .zshrc, or config file for your shell:"
 echo ""
-echo "For Lua to find modules installed with luarocks, you should update your environment variables"
-echo "LUA_PATH=\"$($PREFIX/bin/luarocks path --lr-path)\" LUA_CPATH=\"$($PREFIX/bin/luarocks path --lr-cpath)\" exec $VERSIONED_LUA \"\$@\""
-
-# VERSIONED_LUA="$PREFIX/bin/$(readlink $LUA)"
-
-# rm -rf $PREFIX/bin/luajit
-
-# echo "#!/bin/bash" > $PREFIX/bin/luajit
-# echo "" >> $PREFIX/bin/luajit
-# echo "LUA_PATH=\"$($PREFIX/bin/luarocks path --lr-path)\" LUA_CPATH=\"$($PREFIX/bin/luarocks path --lr-cpath)\" exec $VERSIONED_LUA \"\$@\"" >> $PREFIX/bin/luajit
-# chmod +x $PREFIX/bin/luajit
+echo '`luarocks path`'
+echo ""
+echo "(note the ticks, you want that command to execute in-place)"
+echo "============================================================"

@@ -3,9 +3,9 @@ package:
   version: 2.2.1
 
 source:
-  fn: luarocks-2.2.1.tar.gz
-  url: http://luarocks.org/releases/luarocks-2.2.1.tar.gz
-  md5: 718a0e8c257aace3ec16ebc2cfe9c696
+  fn: luarocks-2.2.2.tar.gz
+  url: http://luarocks.org/releases/luarocks-2.2.2.tar.gz
+  md5: 5a830953d27715cc955119609f8096e6
 
 build:
   number: 0
