@@ -13,9 +13,9 @@ build:
 
 requirements:
   build:
-    - luajit
+    - lua
   run:
-    - luajit
+    - lua
 
 test:
   commands:
