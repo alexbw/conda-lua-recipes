@@ -1,0 +1,27 @@
+package:
+  name: lua-luafilesystem
+  version: 1.6.3
+
+source:
+  git_url: git@github.com:keplerproject/luafilesystem
+  git_tag: v_1_6_3
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+  run:
+    - lua
+    - luarocks
+
+test:
+  commands:
+    - LUA_PATH=$(luarocks path --lr-path) LUA_CPATH=$(luarocks path --lr-cpath) && lua -e "require 'lfs'"
+
+about:
+  home: http://keplerproject.github.io/luafilesystem/
+  license: MIT
