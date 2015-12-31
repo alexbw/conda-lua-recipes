@@ -6,10 +6,14 @@ source:
   fn: lua-5.2.4.tar.gz
   url: http://www.lua.org/ftp/lua-5.2.4.tar.gz
   md5: 913fdb32207046b273fdb17aad70be13
+  patches:
+    - luaconf.patch
+    - Makefile.patch
 
 build:
   number: 1
   detect_binary_files_with_prefix: true
+
 
 requirements:
   build:
