@@ -6,10 +6,12 @@ source:
   fn: lua-5.3.2.tar.gz
   url: http://www.lua.org/ftp/lua-5.3.2.tar.gz
   md5: 33278c2ab5ee3c1a875be8d55c1ca2a1
+  patches:
+    - update.patch
 
 build:
   number: 1
-  # detect_binary_files_with_prefix: true
+  detect_binary_files_with_prefix: true
 
 requirements:
   build:
