@@ -1,0 +1,49 @@
+package:
+  name: lua-luabitop
+  version: 1.0.2
+
+source:
+  git_url: git://github.com/LuaDist/luabitop.git
+  git_tag: 1.0.2 # can also be a branch, but that is highly discouraged
+  # git_rev:  # prefer tags over commits, commits over branches
+  # md5:
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+build:
+  # noarch_python: True
+  # Useful to leave this on by default, will allow relocating
+  # packages that have hard-coded paths in them
+  detect_binary_files_with_prefix: true
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - luarocks
+    - lua
+
+  run:
+    - luarocks
+    - lua
+
+test:
+  commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+    - lua -e "require 'bit'"
+
+  # You can also put a file called run_test.lua in the recipe that will be run
+  # at test time.
+
+about:
+  home: http://bitop.luajit.org/
+  license: MIT/X license
+  summary: Lua Bit Operations Module
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
