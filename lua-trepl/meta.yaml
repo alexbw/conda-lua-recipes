@@ -1,0 +1,38 @@
+package:
+  name: lua-trepl
+  version: 0.1
+
+source:
+  git_url: git@github.com:torch/trepl.git
+  git_rev: 1ae1458
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - lua-torch
+    - lua-penlight
+    - readline
+  run:
+    - lua
+    - luarocks
+    - lua-torch
+    - lua-penlight
+    - readline
+
+test:
+  commands:
+    - lua -e "require 'trepl'"
+    - lua -e "require 'trepl.colors'"
+    - lua -e "require 'trepl.colorize'"
+    - lua -e "require 'readline'"
+    - lua -e "require 'treplutils'"
+
+about:
+  home: https://github.com/torch/trepl
+  license: BSD
+  summary: An embedabble, Lua-only REPL for Torch.

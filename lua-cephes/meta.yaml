@@ -1,0 +1,29 @@
+package:
+  name: lua-torch-cephes
+  version: 0.0
+
+source:
+  git_url: git@github.com:deepmind/torch-cephes.git
+  git_rev: 1b1cda82af82acbb16aa0e15ef1f5ed57b965757
+
+build:
+  number: 3
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - lua-torch
+  run:
+    - lua
+    - luarocks
+    - lua-torch
+
+test:
+  commands:
+    - lua -e "require 'cephes'"
+
+about:
+  home: https://github.com/deepmind/torch-cephes
+  license: BSD

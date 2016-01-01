@@ -1,0 +1,35 @@
+package:
+  name: lua-torch-totem
+  version: 0.0
+
+source:
+  git_url: git@github.com:deepmind/torch-totem.git
+  git_rev: 0e848993b8e357cb77b154501de063f307a719c0
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - lua-torch
+    - lua-penlight
+    - lua-sys
+    - lua-nn
+  run:
+    - lua
+    - luarocks
+    - lua-torch
+    - lua-penlight
+    - lua-sys
+    - lua-nn
+
+test:
+  commands:
+    - lua -e "require 'totem'"
+
+about:
+  home: https://github.com/deepmind/torch-totem
+  license: BSD

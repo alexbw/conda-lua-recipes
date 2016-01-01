@@ -1,0 +1,65 @@
+package:
+  name: lua-lzmq
+  version: 0.4.3
+
+source:
+  fn: v0.4.3.zip
+  url: https://github.com/zeromq/lzmq/archive/v0.4.3.zip
+  # git_url: https://github.com/zeromq/lzmq/archive/v0.4.3.zip
+  # git_tag:  # can also be a branch, but that is highly discouraged
+  # git_rev:  # prefer tags over commits, commits over branches
+  # md5:
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+build:
+  # noarch_python: True
+  # Useful to leave this on by default, will allow relocating
+  # packages that have hard-coded paths in them
+  detect_binary_files_with_prefix: true
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - luarocks
+    - lua
+
+  run:
+    - luarocks
+    - lua
+
+test:
+  commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+    - lua -e "require 'lzmq.ffi.timer'"
+    - lua -e "require 'lzmq.ffi'"
+    - lua -e "require 'lzmq.ffi.error'"
+    - lua -e "require 'lzmq.threads'"
+    - lua -e "require 'lzmq.ffi.poller'"
+    - lua -e "require 'lzmq.llthreads.ex'"
+    - lua -e "require 'lzmq'"
+    - lua -e "require 'lzmq.impl.loop'"
+    - lua -e "require 'lzmq.timer'"
+    - lua -e "require 'lzmq.impl.threads'"
+    - lua -e "require 'lzmq.ffi.api'"
+    - lua -e "require 'lzmq.ffi.threads'"
+    - lua -e "require 'lzmq.poller'"
+    - lua -e "require 'lzmq.ffi.loop'"
+    - lua -e "require 'lzmq.loop'"
+
+  # You can also put a file called run_test.lua in the recipe that will be run
+  # at test time.
+
+about:
+  home: https://github.com/zeromq/lzmq
+  license: MIT/X11
+  summary: Lua bindings to ZeroMQ
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

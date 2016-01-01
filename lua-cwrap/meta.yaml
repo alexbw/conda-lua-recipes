@@ -1,0 +1,29 @@
+package:
+  name: lua-cwrap
+  version: 0.1
+
+source:
+  git_url: git@github.com:torch/cwrap.git
+  git_rev: be920f1f3829ec8c729950f064108442e1547132
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - lua
+    - luarocks
+  run:
+    - lua
+    - luarocks
+
+test:
+  commands:
+    - lua -e "require 'cwrap'"
+    - lua -e "require 'cwrap.cinterface'"
+    - lua -e "require 'cwrap.types'"
+
+about:
+  home: https://github.com/torch/cwrap
+  license: BSD
+  summary: Advanced automatic wrapper for C functions

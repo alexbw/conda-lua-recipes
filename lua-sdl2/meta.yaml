@@ -1,0 +1,57 @@
+package:
+  name: lua-sdl2
+  version: "0.1"
+
+source:
+  git_url: git@github.com:torch/sdl2-ffi.git
+  # git_tag:  # can also be a branch, but that is highly discouraged
+  git_rev: 2e4c9002be0cf523b3f28755b1cf855d3553677f # prefer tags over commits, commits over branches
+  # md5:
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+build:
+  # noarch_python: True
+  # Useful to leave this on by default, will allow relocating
+  # packages that have hard-coded paths in them
+  detect_binary_files_with_prefix: true
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+   - lua
+   - luarocks
+   - sdl2
+   - lua-luaffi [not luajit]
+   - lua-penlight [lua51]
+  run:
+   - lua
+   - luarocks
+   - sdl2
+   - lua-luaffi [not luajit]
+   - lua-penlight [lua51]
+
+test:
+  commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+    - lua -e "require 'sdl2'"
+    - lua -e "require 'sdl2.init'"
+    - lua -e "require 'sdl2.cdefs'"
+    - lua -e "require 'sdl2.defines'"
+
+  # You can also put a file called run_test.lua in the recipe that will be run
+  # at test time.
+
+about:
+  home: https://github.com/Tangent128/luasdl2/
+  license: ISC
+  summary: Lua-SDL2 is a pure C binding of SDL 2.0 for Lua 5.1, JIT, 5.2, and 5.3
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

@@ -1,0 +1,30 @@
+package:
+  name: lua-dok
+  version: 0.1
+
+source:
+  git_url: git@github.com:torch/dok.git
+  git_rev: 2adabfa57361ff6783134d275cf5c0a6536620d3
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - lua-sundown
+  run:
+    - lua
+    - luarocks
+    - lua-sundown
+
+test:
+  commands:
+    - lua -e "require 'dok'"
+
+about:
+  home: https://github.com/torch/dok
+  license: BSD
+  summary: Support for the old torch7 dok system

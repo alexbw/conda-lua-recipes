@@ -1,0 +1,29 @@
+package:
+  name: lua-graph
+  version: 0.1
+
+source:
+  git_url: git@github.com:torch/graph.git
+  git_rev: fbf41c34f41ce4487fa732b8d5ec19d37fefcac1
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - lua-torch
+  run:
+    - lua
+    - luarocks
+    - lua-torch
+
+test:
+  commands:
+    - lua -e "require 'graph'"
+
+about:
+  home: https://github.com/torch/graph
+  license: BSD

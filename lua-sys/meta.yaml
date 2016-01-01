@@ -1,0 +1,30 @@
+package:
+  name: lua-sys
+  version: 1.1
+
+source:
+  git_url: git@github.com:torch/sys.git
+  git_rev: 77f10a2
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - lua-torch
+  run:
+    - lua
+    - luarocks
+    - lua-torch
+
+test:
+  commands:
+    - lua -e "require 'sys'"
+
+about:
+  home: https://github.com/torch/sys
+  license: BSD
+  summary: A system library for Torch

@@ -1,0 +1,41 @@
+package:
+  name: lua-audio
+  version: 0.1
+
+source:
+  git_url: git@github.com:soumith/lua---audio.git
+  git_rev: beaeb8c
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - lua-torch
+    - lua-xlua
+    - lua-sys
+    - fftw
+    - sox
+    - lua-luaffi [not luajit]
+  run:
+    - lua
+    - luarocks
+    - lua-torch
+    - lua-xlua
+    - lua-sys
+    - fftw
+    - sox
+    - lua-dok
+    - lua-luaffi [not luajit]
+
+test:
+  commands:
+    - lua -e "require 'audio'"
+
+about:
+  home: https://github.com/soumith/lua---audio
+  license: RWTFPL
+  summary: Audio library for Torch-7

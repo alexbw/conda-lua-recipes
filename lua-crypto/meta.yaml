@@ -1,0 +1,29 @@
+package:
+  name: lua-crypto
+  version: 0.3.2
+
+source:
+  git_url: git@github.com:mkottman/luacrypto.git
+  git_tag: 0.3.2
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - openssl
+  run:
+    - lua
+    - luarocks
+    - openssl
+
+test:
+  commands:
+    - lua -e "require 'crypto'"
+
+about:
+  home: http://mkottman.github.com/luacrypto/
+  license: MIT

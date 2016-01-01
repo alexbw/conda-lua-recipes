@@ -1,0 +1,31 @@
+package:
+  name: lua-gnuplot
+  version: 1.0
+
+source:
+  git_url: git@github.com:torch/gnuplot.git
+  git_rev: 3230b41
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - lua-torch
+    - lua-paths
+  run:
+    - lua
+    - luarocks
+    - lua-torch
+
+test:
+  commands:
+    - lua -e "require 'gnuplot'"
+
+about:
+  home: https://github.com/torch/gnuplot
+  license: BSD
+  summary: Torch interface to Gnuplot

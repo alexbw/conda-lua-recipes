@@ -1,0 +1,51 @@
+package:
+  name: lua-lbase64
+  version: "201208073"
+
+source:
+  fn: lbase64.tar.gz
+  url: http://www.tecgraf.puc-rio.br/~lhf/ftp/lua/5.2/lbase64.tar.gz
+  # git_url: http://www.tecgraf.puc-rio.br/~lhf/ftp/lua/5.2/lbase64.tar.gz
+  # git_tag:  # can also be a branch, but that is highly discouraged
+  # git_rev:  # prefer tags over commits, commits over branches
+  # md5:
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+build:
+  # noarch_python: True
+  # Useful to leave this on by default, will allow relocating
+  # packages that have hard-coded paths in them
+  detect_binary_files_with_prefix: true
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - luarocks
+    - lua
+
+  run:
+    - luarocks
+    - lua
+
+test:
+  commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+    - lua -e "require 'base64'"
+
+  # You can also put a file called run_test.lua in the recipe that will be run
+  # at test time.
+
+about:
+  home: http://www.tecgraf.puc-rio.br/~lhf/ftp/lua/
+  license: Public domain
+  summary: A Base64 library for Lua
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

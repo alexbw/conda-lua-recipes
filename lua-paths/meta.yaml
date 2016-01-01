@@ -1,0 +1,29 @@
+package:
+  name: lua-paths
+  version: 0.1
+
+source:
+  git_url: git@github.com:torch/paths.git
+  git_rev: 3c0dc8f
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - cmake
+    - luarocks
+  run:
+    - luarocks
+    - lua
+
+test:
+  commands:
+    - lua -e "require 'paths'"
+
+about:
+  home: https://github.com/torch/paths
+  license: BSD
+  summary: Paths manipulations

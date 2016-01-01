@@ -1,0 +1,30 @@
+package:
+  name: lua-class
+  version: 1.0
+
+source:
+  git_url: git@github.com:torch/class.git
+  git_rev: bc319dbafbfa825ab1f860d9ae95764edd96f829
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - lua-argcheck
+  run:
+    - lua
+    - luarocks
+    - lua-argcheck
+
+test:
+  commands:
+    - lua -e "require 'class'"
+
+about:
+  home: https://github.com/torch/class
+  license: BSD
+  summary: Class Objects for Lua

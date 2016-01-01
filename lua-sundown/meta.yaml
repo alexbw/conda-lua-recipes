@@ -1,0 +1,35 @@
+package:
+  name: lua-sundown
+  version: 0.1
+
+source:
+  git_url: git@github.com:torch/sundown-ffi.git
+  git_rev: f631a979f644c571c801dc664ef10c2f56136882
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - lua-luaffi [not luajit]
+  run:
+    - lua
+    - luarocks
+    - lua-luaffi [not luajit]
+
+test:
+  commands:
+    - lua -e "require 'sundown'"
+    - lua -e "require 'sundown.env'"
+    - lua -e "require 'sundown.init'"
+    - lua -e "require 'sundown.sdcdefs'"
+    - lua -e "require 'sundown.htmlcdefs'"
+    - lua -e "require 'sundown.html'"
+    - lua -e "require 'sundown.ascii'"
+
+about:
+  home: https://github.com/sampsyo/lua-sundown
+  license: MIT

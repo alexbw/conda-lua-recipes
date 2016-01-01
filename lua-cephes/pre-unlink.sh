@@ -1,0 +1,1 @@
+$PREFIX/bin/luarocks remove cephes
