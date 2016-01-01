@@ -9,3 +9,7 @@ conda build lua-penlight --lua="all"
 conda build lua-luaffifb --lua=5.1 --lua=5.2 # ffi doesn't work with 5.3. all packages that depend on it won't build for 5.3
 conda build lua-argcheck --lua=5.1 --lua=5.2 --lua=2.0
 conda build lua-cjson --lua="all"
+conda build lua-uuid --lua="all"
+conda build fftw
+conda build sox
+conda build sdl2
