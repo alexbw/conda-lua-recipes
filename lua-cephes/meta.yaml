@@ -1,13 +1,13 @@
 package:
-  name: lua-torch-cephes
-  version: 0.0
+  name: lua-cephes
+  version: 0.1
 
 source:
   git_url: git@github.com:deepmind/torch-cephes.git
-  git_rev: 1b1cda82af82acbb16aa0e15ef1f5ed57b965757
+  git_rev: f48310a
 
 build:
-  number: 3
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -15,15 +15,20 @@ requirements:
     - lua
     - luarocks
     - lua-torch
+    - lua-luaffi [not luajit]
+    - lua-penlight # for 5.1 compatibility
   run:
     - lua
     - luarocks
     - lua-torch
+    - lua-luaffi [not luajit]
+    - lua-penlight # for 5.1 compatibility
 
 test:
   commands:
-    - lua -e "require 'cephes'"
+    - lua -e "require 'pl'; require 'cephes'"
 
 about:
   home: https://github.com/deepmind/torch-cephes
   license: BSD
+  summary: Cephes mathematical functions library, wrapped for Torch

@@ -4,7 +4,7 @@ package:
 
 source:
   git_url: git@github.com:clementfarabet/lua---nnx.git
-  git_rev: 3642beecfba9bee13e4ee1e109f7ef6da41a0452
+  git_rev: c080463
 
 build:
   number: 1
@@ -31,3 +31,4 @@ test:
 about:
   home: https://github.com/clementfarabet/lua---nnx
   license: BSD
+  summary: A completely unstable and experimental package that extends Torch's builtin nn library

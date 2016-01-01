@@ -1,10 +1,10 @@
 package:
   name: lua-cunn
-  version: 1.0
+  version: 0.1
 
 source:
   git_url: git@github.com:torch/cunn.git
-  git_rev: 28f41e374777c708d9871385366b1fc6f3f195bd
+  git_rev: 71ca338
 
 build:
   number: 0
@@ -14,14 +14,14 @@ requirements:
   build:
     - lua
     - luarocks
-    - lua-cutorch7
-    - lua-torch
+    - lua-cutorch
     - lua-nn
+    - cmake
   run:
     - lua
-    - lua-cutorch7
-    - lua-torch
+    - lua-cutorch
     - lua-nn
+    - cmake
 
 test:
   commands:
@@ -30,3 +30,4 @@ test:
 about:
   home: https://github.com/torch/cunn
   license: BSD
+  summary: Torch CUDA Neural Network Implementation

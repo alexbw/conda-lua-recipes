@@ -4,7 +4,7 @@ package:
 
 source:
   git_url: git@github.com:torch/optim.git
-  git_rev: 446de4f45f3e901adc889f4d6a49051028e437e8
+  git_rev: e963a69
 
 build:
   number: 1
@@ -29,3 +29,4 @@ test:
 about:
   home: https://github.com/torch/optim
   license: BSD
+  summary: An optimization library for Torch.

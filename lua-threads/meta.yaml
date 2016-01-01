@@ -1,10 +1,10 @@
 package:
   name: lua-threads
-  version: 1.0
+  version: 0.1
 
 source:
   git_url: git@github.com:torch/threads-ffi.git
-  git_rev: d223e9d60ed04f91016867065a5ef7575d337dce
+  git_rev: 2a5e2a6
 
 build:
   number: 1
@@ -17,12 +17,14 @@ requirements:
     - lua-torch
     - sdl2
     - lua-sdl2
+    - lua-luaffi [not luajit]
   run:
     - lua
     - luarocks
     - lua-torch
     - sdl2
     - lua-sdl2
+    - lua-luaffi [not luajit]
 
 test:
   commands:
@@ -31,3 +33,4 @@ test:
 about:
   home: https://github.com/torch/threads-ffi
   license: BSD
+  summary: Threads for Torch

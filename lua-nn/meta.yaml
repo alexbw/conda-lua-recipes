@@ -1,13 +1,13 @@
 package:
   name: lua-nn
-  version: 1.0
+  version: 0.1
 
 source:
   git_url: git@github.com:torch/nn.git
-  git_rev: f788c4f9110cd22dadbe143c205d83e1f92478e0
+  git_rev:  e82d8cb
 
 build:
-  number: 2
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -15,10 +15,12 @@ requirements:
     - lua
     - luarocks
     - lua-torch
+    - lua-luaffi [not luajit]
   run:
     - lua
     - luarocks
     - lua-torch
+    - lua-luaffi [not luajit]
 
 test:
   commands:
@@ -27,3 +29,4 @@ test:
 about:
   home: https://github.com/torch/nn
   license: BSD
+  summary: Neural Network package for Torch

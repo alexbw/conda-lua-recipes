@@ -4,6 +4,8 @@
 # - lua-crypto isn't compatible with 5.3 (there is a fork, see lua-crypto/build.sh)
 # - lua-paths isn't compatible with 5.3
 # - lua-audio isn't compatible with 5.1 and 5.2, not sure why, some luaL_register error
+# - lua-hdf5 isn't compatible with vanilla Lua, even with luabitopt and luaffi. Not sure why.
+# - lua-cunn isn't working with LuaJIT, I don't know why
 
 conda clean --index-cache --packages --source-cache
 conda build lua-5.1.5
@@ -38,3 +40,20 @@ conda build lua-trepl --lua=5.1 --lua=5.2 --lua=2.0
 conda build lua-audio --lua=2.0
 conda build lua-gnuplot --lua=5.1 --lua=5.2 --lua=2.0
 conda build lua-env --lua=5.2 --lua=2.0
+conda build lua-graph --lua=5.1 --lua=5.2 --lua=2.0
+conda build lua-threads --lua=2.0
+conda build lua-image --lua=5.2 --lua=2.0
+conda build lua-cephes --lua=5.1 --lua=5.2 --lua=2.0
+conda build lua-randomkit --lua=5.1 --lua=5.2 --lua=2.0
+conda build lua-distributions --lua=5.1 --lua=5.2 --lua=2.0
+conda build lua-nn --lua=5.1 --lua=5.2 --lua=2.0
+conda build lua-nngraph --lua=5.1 --lua=5.2 --lua=2.0
+conda build lua-totem --lua=5.1 --lua=5.2 --lua=2.0
+conda build lua-luabitop --lua=5.1 --lua=5.2
+conda build lua-hdf5 --lua=2.0
+conda build lua-optim --lua=5.1 --lua=5.2 --lua=2.0
+conda build lua-pprint --lua=5.1 --lua=5.2 --lua=2.0
+conda build lua-signal --lua=5.1 --lua=5.2 --lua=2.0
+conda build lua-nnx --lua=5.1 --lua=5.2 --lua=2.0
+conda build lua-cutorch --lua=5.1 --lua=5.2 --lua=2.0
+conda build lua-cunn --lua=5.1 --lua=5.2

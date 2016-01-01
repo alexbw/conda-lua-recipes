@@ -1,10 +1,10 @@
 package:
-  name: lua-torch-distributions
-  version: 0.0
+  name: lua-distributions
+  version: 0.1
 
 source:
   git_url: git@github.com:deepmind/torch-distributions.git
-  git_rev: 2a915e274734a52ae406436b3dbc540c66b631c5
+  git_rev: fb6dd52
 
 build:
   number: 0
@@ -15,19 +15,20 @@ requirements:
     - lua
     - luarocks
     - lua-torch
-    - lua-torch-randomkit
-    - lua-penlight
+    - lua-randomkit
+    - lua-penlight # lua 5.1 compatibility
   run:
     - lua
     - luarocks
     - lua-torch
-    - lua-torch-randomkit
-    - lua-penlight
+    - lua-randomkit
+    - lua-penlight # lua 5.1 compatibility
 
 test:
   commands:
-    - lua -e "require 'torch'; require 'distributions'"
+    - lua -e "require 'pl'; require 'torch'; require 'distributions'"
 
 about:
   home: https://github.com/deepmind/torch-distributions
   license: BSD
+  summary: Probability distributions

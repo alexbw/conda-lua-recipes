@@ -1,10 +1,10 @@
 package:
   name: lua-pprint
-  version: 0.0
+  version: 0.1
 
 source:
   git_url: git@github.com:deepmind/lua-pprint.git
-  git_rev: 6a5560ece761b0e32c1a2cfd09e2024936b16a09
+  git_rev: 4239fce
 
 build:
   number: 0
@@ -27,3 +27,4 @@ test:
 about:
   home: https://github.com/deepmind/lua-pprint
   license: BSD
+  summary: A pretty print library for Torch and lua.

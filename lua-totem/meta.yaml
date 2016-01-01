@@ -1,10 +1,10 @@
 package:
-  name: lua-torch-totem
-  version: 0.0
+  name: lua-totem
+  version: 0.1
 
 source:
   git_url: git@github.com:deepmind/torch-totem.git
-  git_rev: 0e848993b8e357cb77b154501de063f307a719c0
+  git_rev: 4d7a70b
 
 build:
   number: 1
@@ -18,6 +18,7 @@ requirements:
     - lua-penlight
     - lua-sys
     - lua-nn
+    - lua-nngraph
   run:
     - lua
     - luarocks
@@ -25,6 +26,7 @@ requirements:
     - lua-penlight
     - lua-sys
     - lua-nn
+    - lua-nngraph
 
 test:
   commands:
@@ -33,3 +35,4 @@ test:
 about:
   home: https://github.com/deepmind/torch-totem
   license: BSD
+  summary: Torch test module

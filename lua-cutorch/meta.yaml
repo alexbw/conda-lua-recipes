@@ -1,10 +1,10 @@
 package:
-  name: lua-cutorch7
-  version: 1.0
+  name: lua-cutorch
+  version: 7
 
 source:
   git_url: git@github.com:torch/cutorch.git
-  git_rev: 0903d5763025d163c575b11d5a51ce3d760c3ad1
+  git_rev: 50bfa8d
 
 build:
   number: 1
@@ -28,3 +28,4 @@ test:
 about:
   home: https://github.com/torch/cutorch
   license: BSD
+  summary: Torch CUDA Implementation

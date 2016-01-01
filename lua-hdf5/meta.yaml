@@ -1,10 +1,10 @@
 package:
-  name: lua-torch-hdf5
-  version: 0.0
+  name: lua-hdf5
+  version: 0.1
 
 source:
   git_url: git@github.com:deepmind/torch-hdf5.git
-  git_rev: 21e453584952edcc34cf05d629a7cda3b3f81a58
+  git_rev: d7e8a6d
 
 build:
   number: 0
@@ -16,15 +16,19 @@ requirements:
     - luarocks
     - lua-torch
     - lua-penlight
-    - lua-torch-totem
+    - lua-totem
     - hdf5
+    - lua-luaffi [not luajit]
+    - lua-luabitop [not luajit]
   run:
     - lua
     - luarocks
     - lua-torch
     - lua-penlight
-    - lua-torch-totem
+    - lua-totem
     - hdf5
+    - lua-luaffi [not luajit]
+    - lua-luabitop [not luajit]
 
 test:
   commands:
@@ -33,3 +37,4 @@ test:
 about:
   home: https://github.com/deepmind/torch-hdf5
   license: BSD
+  summary: Interface to HDF5 library

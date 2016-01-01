@@ -1,13 +1,13 @@
 package:
-  name: lua-torch-randomkit
+  name: lua-randomkit
   version: 0.1
 
 source:
-  git_url: git@github.com:alexbw/torch-randomkit.git
-  git_rev: aef369919b7346a702c11adbc5d462b9ad33cb94
+  git_url: git@github.com:deepmind/torch-randomkit.git
+  git_rev:  92898e2
 
 build:
-  number: 2
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -15,17 +15,20 @@ requirements:
     - lua
     - luarocks
     - lua-torch
-    - lua-torch-cephes
+    - lua-cephes
+    - lua-penlight # lua 5.1 compatibility
   run:
     - lua
     - luarocks
     - lua-torch
-    - lua-torch-cephes
+    - lua-cephes
+    - lua-penlight # lua 5.1 compatibility
 
 test:
   commands:
-    - lua -e "require 'randomkit'"
+    - lua -e "require 'pl'; require 'torch'; require 'randomkit'"
 
 about:
   home: https://github.com/deepmind/torch-randomkit
   license: BSD
+  summary: Numpy's randomkit, wrapped for Torch

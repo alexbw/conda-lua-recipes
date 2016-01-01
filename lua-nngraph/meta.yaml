@@ -1,10 +1,10 @@
 package:
   name: lua-nngraph
-  version: 1.0
+  version: 0.1
 
 source:
   git_url: git@github.com:torch/nngraph.git
-  git_rev: b7afcc2ea1194b38ba715178981a12190543436f
+  git_rev: 6cd17c4
 
 build:
   number: 1
@@ -31,3 +31,4 @@ test:
 about:
   home: https://github.com/torch/nngraph
   license: BSD
+  summary: This package provides graphical computation for nn library in Torch7

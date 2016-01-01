@@ -4,7 +4,7 @@ package:
 
 source:
   git_url: git@github.com:soumith/torch-signal.git
-  git_rev: e408a245023fe8c9fa18356480d0a3f18feb8b7d
+  git_rev: 94290c5
 
 build:
   number: 1
@@ -16,16 +16,19 @@ requirements:
     - luarocks
     - lua-torch
     - lua-fftw3
+    - lua-penlight # lua 5.1 compatibility
   run:
     - lua
     - luarocks
     - lua-torch
     - lua-fftw3
+    - lua-penlight # lua 5.1 compatibility
 
 test:
   commands:
-    - lua -e "require 'signal'"
+    - lua -e "require 'pl'; require 'signal'"
 
 about:
   home: https://github.com/soumith/torch-signal
   license: BSD
+  summary: A signal processing toolbox for Torch-7
