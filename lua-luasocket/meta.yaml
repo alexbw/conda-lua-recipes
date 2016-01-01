@@ -1,0 +1,63 @@
+package:
+  name: lua-luasocket
+  version: "30rc12"
+
+source:
+  fn: v3.0-rc1.zip
+  url: https://github.com/diegonehab/luasocket/archive/v3.0-rc1.zip
+  # git_url: https://github.com/diegonehab/luasocket/archive/v3.0-rc1.zip
+  # git_tag:  # can also be a branch, but that is highly discouraged
+  # git_rev:  # prefer tags over commits, commits over branches
+  # md5:
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+build:
+  # noarch_python: True
+  # Useful to leave this on by default, will allow relocating
+  # packages that have hard-coded paths in them
+  detect_binary_files_with_prefix: true
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - luarocks
+    - lua >=5.1
+
+  run:
+    - luarocks
+    - lua >=5.1
+
+test:
+  commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+    - lua -e "require 'socket.smtp'" 
+    - lua -e "require 'socket.headers'" 
+    - lua -e "require 'ltn12'" 
+    - lua -e "require 'socket.http'" 
+    - lua -e "require 'socket.serial'" 
+    - lua -e "require 'socket.ftp'" 
+    - lua -e "require 'socket.url'" 
+    - lua -e "require 'socket.core'" 
+    - lua -e "require 'mime'" 
+    - lua -e "require 'mime.core'" 
+    - lua -e "require 'socket.tp'" 
+    - lua -e "require 'socket.unix'" 
+    - lua -e "require 'socket'" 
+
+  # You can also put a file called run_test.lua in the recipe that will be run
+  # at test time.
+
+about:
+  home: http://luaforge.net/projects/luasocket/
+  license: MIT
+  summary: Network support for the Lua language
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

@@ -1,0 +1,48 @@
+package:
+  name: lua-luaffi
+  version: "0.1"
+
+source:
+  git_url: git://github.com/facebook/luaffifb.git
+  git_rev: 7203c89 # prefer tags over commits, commits over branches
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+build:
+  # noarch_python: True
+  # Useful to leave this on by default, will allow relocating
+  # packages that have hard-coded paths in them
+  detect_binary_files_with_prefix: true
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - luarocks
+    - lua
+
+  run:
+    - luarocks
+    - lua
+
+test:
+  commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+    - lua -e "require 'ffi'"
+    - lua -e "require 'ffi.test'"
+
+  # You can also put a file called run_test.lua in the recipe that will be run
+  # at test time.
+
+about:
+  home: https://github.com/facebook/luaffifb
+  license: BSD
+  summary: FFI library for calling C functions from lua
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

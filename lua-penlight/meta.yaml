@@ -1,0 +1,87 @@
+package:
+  name: lua-penlight
+  version: "1.3.2"
+
+source:
+  git_url: git://github.com/stevedonovan/Penlight.git
+  git_tag:  1.3.2 # can also be a branch, but that is highly discouraged
+  # git_rev:  # prefer tags over commits, commits over branches
+  # md5:
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+build:
+  # noarch_python: True
+  # Useful to leave this on by default, will allow relocating
+  # packages that have hard-coded paths in them
+  detect_binary_files_with_prefix: true
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - lua-luafilesystem
+
+  run:
+    - lua
+    - luarocks
+    - lua-luafilesystem
+
+test:
+  commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+    - lua -e "require 'pl.array2d'"
+    - lua -e "require 'pl.class'"
+    - lua -e "require 'pl.test'"
+    - lua -e "require 'pl.app'"
+    - lua -e "require 'pl.List'"
+    - lua -e "require 'pl.permute'"
+    - lua -e "require 'pl.stringx'"
+    - lua -e "require 'pl.Map'"
+    - lua -e "require 'pl.lapp'"
+    - lua -e "require 'pl.import_into'"
+    - lua -e "require 'pl.data'"
+    - lua -e "require 'pl.utils'"
+    - lua -e "require 'pl.url'"
+    - lua -e "require 'pl.Set'"
+    - lua -e "require 'pl.stringio'"
+    - lua -e "require 'pl.xml'"
+    - lua -e "require 'pl.sip'"
+    - lua -e "require 'pl.comprehension'"
+    - lua -e "require 'pl.pretty'"
+    - lua -e "require 'pl.text'"
+    - lua -e "require 'pl.template'"
+    - lua -e "require 'pl.strict'"
+    - lua -e "require 'pl.func'"
+    - lua -e "require 'pl.path'"
+    - lua -e "require 'pl.seq'"
+    - lua -e "require 'pl.tablex'"
+    - lua -e "require 'pl.config'"
+    - lua -e "require 'pl.OrderedMap'"
+    - lua -e "require 'pl.types'"
+    - lua -e "require 'pl.lexer'"
+    - lua -e "require 'pl.operator'"
+    - lua -e "require 'pl.init'"
+    - lua -e "require 'pl.luabalanced'"
+    - lua -e "require 'pl.dir'"
+    - lua -e "require 'pl.MultiMap'"
+    - lua -e "require 'pl.Date'"
+    - lua -e "require 'pl.input'"
+    - lua -e "require 'pl.file'"
+
+  # You can also put a file called run_test.lua in the recipe that will be run
+  # at test time.
+
+about:
+  home: http://stevedonovan.github.com/Penlight
+  license: MIT/X11
+  summary: Lua utility libraries loosely based on the Python standard libraries
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

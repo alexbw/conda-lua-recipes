@@ -1,0 +1,35 @@
+package:
+  name: lua-argcheck
+  version: 1.0
+
+source:
+  git_url: git@github.com:torch/argcheck.git
+  git_rev: 623c12f0ffec61501962ee3a9312a9f7551f3ee3
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - lua-luaffi [not luajit]
+  run:
+    - lua
+    - luarocks
+    - lua-luaffi [not luajit]
+
+test:
+  commands:
+    - lua -e "require 'argcheck'"
+    - lua -e "require 'argcheck.init'"
+    - lua -e "require 'argcheck.env'"
+    - lua -e "require 'argcheck.utils'"
+    - lua -e "require 'argcheck.doc'"
+    - lua -e "require 'argcheck.dump'"
+
+about:
+  home: https://github.com/torch/argcheck
+  license: BSD
+  summary: Advanced function argument checker

@@ -1,0 +1,28 @@
+package:
+  name: lua-uuid
+  version: 0.2
+
+source:
+  git_url: git@github.com:Tieske/uuid.git
+  git_tag: version_0.2.0
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+  run:
+    - lua
+    - luarocks
+
+test:
+  commands:
+    - lua -e "require 'uuid'"
+
+about:
+  home: https://github.com/Tieske/uuid
+  license: Apache 2.0
+  summary: Generates uuids in pure Lua
