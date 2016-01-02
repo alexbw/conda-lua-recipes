@@ -4,7 +4,7 @@ package:
 
 source:
   git_url: git@github.com:soumith/lua---audio.git
-  git_rev: beaeb8c
+  git_rev: e9d87cc
 
 build:
   number: 1

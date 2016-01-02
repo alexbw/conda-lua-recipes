@@ -1,0 +1,62 @@
+package:
+  name: lua-science
+  version: 1.0
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - luarocks
+    - lua-cjson
+    - lua-torch
+    - lua-nn
+    - lua-nngraph
+    - lua-distributions
+    - lua-randomkit
+    - lua-cephes
+    - lua-signal
+    - lua-audio
+    - lua-pprint
+    - lua-optim
+    - lua-hdf5 [luajit]
+    - lua-totem
+    - lua-image
+    - lua-graph
+    - lua-trepl
+    - lua-xlua
+    - lua-sys
+    - lua-paths
+    - lua-class
+    - lua-argcheck
+    - lua-penlight
+
+  run:
+    - luarocks
+    - lua-cjson
+    - lua-torch
+    - lua-nn
+    - lua-nngraph
+    - lua-distributions
+    - lua-randomkit
+    - lua-cephes
+    - lua-signal
+    - lua-audio
+    - lua-pprint
+    - lua-optim
+    - lua-hdf5 [luajit]
+    - lua-totem
+    - lua-image
+    - lua-graph
+    - lua-trepl
+    - lua-xlua
+    - lua-sys
+    - lua-paths
+    - lua-class
+    - lua-argcheck
+    - lua-penlight
+
+about:
+  home: http://www.github.com.org/alexbw
+  summary: An easy-to-install Lua distribution for science and machine learning
+  license: MIT
