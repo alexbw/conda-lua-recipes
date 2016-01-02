@@ -1,4 +1,4 @@
-# conda-lua-recipes
+# Conda recipes for installing packages from the Torch ecosystem.
 
 WORK IN PROGRESS
 
@@ -7,13 +7,13 @@ WORK IN PROGRESS
 wget http://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 sh Miniconda-latest-MacOSX-x86_64.sh -b -p $HOME/anaconda
 
-# Install anaconda client and build client
+# For development, install anaconda client and build client
 conda install conda-build
 conda install anaconda-client
 
+# Ideally, all you have to do to install everything is this
+conda install lua=5.2 lua-science
 ```
-
-Conda recipes for installing packages from the Torch ecosystem.
 
 Resources:
 
