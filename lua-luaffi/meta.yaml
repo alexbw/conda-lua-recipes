@@ -4,7 +4,7 @@ package:
 
 source:
   git_url: git://github.com/facebook/luaffifb.git
-  git_rev: 7203c89 # prefer tags over commits, commits over branches
+  git_rev: 79c7dca # prefer tags over commits, commits over branches
 #  patches:
    # List any patch files here
    # - fix.patch

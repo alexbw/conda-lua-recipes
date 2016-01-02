@@ -26,30 +26,21 @@ requirements:
   build:
     - luarocks
     - lua
+    - lua-llthreads2
+    # - lua-luaffi [not luajit]
 
   run:
     - luarocks
     - lua
+    - lua-llthreads2
+    # - lua-luaffi [not luajit]
 
 test:
   commands:
     # You can put test commands to be run here.  Use this to test that the
     # entry points work.
-
-    - lua -e "require 'lzmq.ffi.timer'"
-    - lua -e "require 'lzmq.ffi'"
-    - lua -e "require 'lzmq.ffi.error'"
-    - lua -e "require 'lzmq.threads'"
-    - lua -e "require 'lzmq.ffi.poller'"
-    - lua -e "require 'lzmq.llthreads.ex'"
     - lua -e "require 'lzmq'"
-    - lua -e "require 'lzmq.impl.loop'"
     - lua -e "require 'lzmq.timer'"
-    - lua -e "require 'lzmq.impl.threads'"
-    - lua -e "require 'lzmq.ffi.api'"
-    - lua -e "require 'lzmq.ffi.threads'"
-    - lua -e "require 'lzmq.poller'"
-    - lua -e "require 'lzmq.ffi.loop'"
     - lua -e "require 'lzmq.loop'"
 
   # You can also put a file called run_test.lua in the recipe that will be run

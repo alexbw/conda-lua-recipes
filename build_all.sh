@@ -5,6 +5,7 @@
 # - lua-paths isn't compatible with 5.3 (https://github.com/torch/paths/issues/18)
 # - lua-hdf5 doesn't work with PUC Lua b/c of a bug in luaffi (https://github.com/facebook/luaffifb/issues/4)
 # - lua-sdl2 only works with LuaJIT, depends on "jit" variable (https://github.com/torch/sdl2-ffi/issues/7)
+# - lua-lzmq has an ffi-only version. Should use that eventually.
 
 conda clean --index-cache --packages --source-cache
 conda build lua-5.1.5
