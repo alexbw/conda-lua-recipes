@@ -2,9 +2,6 @@
 
 WORK IN PROGRESS
 
-Things I'd like to do:
- * Patch Lua and LuaJIT to have a more intelligent package.path default (right now need to manually set LUA_PATH). *This happens in luaconf.h* (previously, I aliased lua to a bash script which set those environment variables and then launched Lua, but that's dirty).
-
 ```
 # Install anaconda (instructions here for OS X)
 wget http://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
