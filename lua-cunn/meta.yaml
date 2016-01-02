@@ -3,8 +3,9 @@ package:
   version: 0.1
 
 source:
-  git_url: git@github.com:torch/cunn.git
-  git_rev: 71ca338
+  git_url: git@github.com:alexbw/cunn.git
+  git_tag: master
+  # git_rev: 71ca338
 
 build:
   number: 0
@@ -14,14 +15,14 @@ requirements:
   build:
     - lua
     - luarocks
+    - lua-torch
     - lua-cutorch
     - lua-nn
-    - cmake
   run:
     - lua
+    - lua-torch
     - lua-cutorch
     - lua-nn
-    - cmake
 
 test:
   commands:
