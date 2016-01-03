@@ -3,8 +3,9 @@ package:
   version: 0.1
 
 source:
-  git_url: git@github.com:facebook/iTorch.git
-  git_rev:  508370b
+  path: /Users/Alex/Code/iTorch
+  # git_url: git@github.com:alexbw/iTorch.git
+  # git_tag: master
 
 build:
   number: 1
@@ -24,6 +25,7 @@ requirements:
     - lua-lzmq
     - lua-crypto
     - jupyter
+    - notebook
     - zeromq
   run:
     - lua
@@ -38,11 +40,15 @@ requirements:
     - lua-lzmq
     - lua-crypto
     - jupyter
+    - notebook
     - zeromq
 
-# test:
-  # commands:
-    # - lua -e "require 'audio'"
+test:
+  commands:
+    - lua -e "require 'itorch.util'"
+    # - lua -e "arg={'$1','$IO_PORTNUM'};require 'itorch.main'"
+    # - lua -e "arg={'$1','$IO_STDO','$IO_PORTNUM'};require 'itorch.IOHandler'"
+    # - lua -e "require 'itorch.IOHandler'"
 
 about:
   home: https://github.com/facebook/iTorch
