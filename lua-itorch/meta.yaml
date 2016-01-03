@@ -3,9 +3,8 @@ package:
   version: 0.1
 
 source:
-  path: /Users/Alex/Code/iTorch
-  # git_url: git@github.com:alexbw/iTorch.git
-  # git_tag: master
+  git_url: git@github.com:alexbw/iTorch.git
+  git_rev: 2418681
 
 build:
   number: 1
