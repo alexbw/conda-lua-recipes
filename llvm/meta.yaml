@@ -22,8 +22,8 @@ requirements:
 
 test:
   commands:
-    - llvm-config --libs   [linux]
-    - llc -version         [linux]
+    - llvm-config --libs   [not win]
+    - llc -version         [not win]
 
 about:
   home: http://llvm.org/

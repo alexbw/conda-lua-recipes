@@ -57,3 +57,6 @@ conda build lua-nnx --lua=5.1 --lua=5.2 --lua=2.0 &&
 conda build lua-cutorch --lua=5.1 --lua=5.2 --lua=2.0 &&
 conda build lua-cunn --lua=5.1 --lua=5.2 --lua=2.0 &&
 conda build lua-itorch --lua-5.2 --lua-2.0
+
+conda build llvm # for Terra
+conda build clang
