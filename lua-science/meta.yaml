@@ -30,6 +30,7 @@ requirements:
     - lua-class
     - lua-argcheck
     - lua-penlight
+    - lua-itorch # this pulls in a ton of Python, maybe we don't want that?
 
   run:
     - luarocks
@@ -55,6 +56,7 @@ requirements:
     - lua-class
     - lua-argcheck
     - lua-penlight
+    - lua-itorch # this pulls in a ton of Python, maybe we don't want that?
 
 about:
   home: http://www.github.com.org/alexbw
