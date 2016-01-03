@@ -1,6 +1,6 @@
 # From: https://github.com/numba/llvmlite
 package:
-  name: llvm
+  name: llvm-clang
   version: "3.6.2"
 
 source:
@@ -24,8 +24,9 @@ test:
   commands:
     - llvm-config --libs   [not win]
     - llc -version         [not win]
+    - clang --version
 
 about:
   home: http://llvm.org/
   license: Open Source (http://llvm.org/releases/3.6.0/LICENSE.TXT)
-  summary: Development headers and libraries for LLVM
+  summary: LLVM and Clang
