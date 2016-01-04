@@ -17,12 +17,14 @@ requirements:
     - lua-torch
     - graphviz
     - lua-luaffi [not luajit]
+    - cmake
   run:
     - lua
     - luarocks
     - lua-torch
     - graphviz
     - lua-luaffi [not luajit]
+    - cmake
 test:
   commands:
     - lua -e "require 'graph'"

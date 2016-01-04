@@ -16,11 +16,13 @@ requirements:
     - luarocks
     - lua-torch
     - lua-luaffi [not luajit]
+    - cmake
   run:
     - lua
     - luarocks
     - lua-torch
     - lua-luaffi [not luajit]
+    - cmake
 
 test:
   commands:

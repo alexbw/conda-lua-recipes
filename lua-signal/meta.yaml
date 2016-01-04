@@ -17,12 +17,14 @@ requirements:
     - lua-torch
     - lua-fftw3
     - lua-penlight # lua 5.1 compatibility
+    - cmake
   run:
     - lua
     - luarocks
     - lua-torch
     - lua-fftw3
     - lua-penlight # lua 5.1 compatibility
+    - cmake
 
 test:
   commands:

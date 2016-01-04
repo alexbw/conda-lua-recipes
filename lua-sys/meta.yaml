@@ -15,10 +15,12 @@ requirements:
     - lua
     - luarocks
     - lua-torch
+    - cmake
   run:
     - lua
     - luarocks
     - lua-torch
+    - cmake
 
 test:
   commands:

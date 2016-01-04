@@ -17,12 +17,14 @@ requirements:
     - lua-torch
     - lua-luaffi [not luajit]
     - lua-penlight # for 5.1 compatibility
+    - cmake
   run:
     - lua
     - luarocks
     - lua-torch
     - lua-luaffi [not luajit]
     - lua-penlight # for 5.1 compatibility
+    - cmake
 
 test:
   commands:
