@@ -24,3 +24,13 @@ Resources:
 * [Build instructions for Lua](http://ftp.tku.edu.tw/NetBSD/NetBSD-current/src/external/mit/lua/dist/doc/readme.html)
 
 * [Patching files with git diffs is finicky](http://unix.stackexchange.com/questions/1395/what-does-patch-unexpectedly-ends-in-middle-of-line-mean)
+
+
+Misc notes:
+```
+metadata:ns_cfg() — defines for YAML directives
+main_build: — defines version numbers 
+environ:get_lua_include_dir() — uses version numbers to locate the include directory
+config:Config._get_lua — uses version numbers to locate the binary
+This is where the linked package name is converted into what is used
+```
