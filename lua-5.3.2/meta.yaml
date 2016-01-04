@@ -15,13 +15,14 @@ build:
 
 requirements:
   build:
-    - readline
+    - readline [osx]
   run:
-    - readline
+    - readline [osx]
 
 test:
   commands:
     - lua -v
+    - lua -e "print(package.path)"
 
 about:
   home: http://www.lua.org/
