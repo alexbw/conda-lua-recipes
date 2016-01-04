@@ -3,7 +3,7 @@ package:
   version: 0.1
 
 source:
-  git_url: git@github.com:clementfarabet/lua---nnx.git
+  git_url: https://github.com/clementfarabet/lua---nnx.git
   git_rev: c080463
 
 build:

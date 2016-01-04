@@ -3,7 +3,7 @@ package:
   version: 1.1
 
 source:
-  git_url: git@github.com:torch/xlua.git
+  git_url: https://github.com/torch/xlua.git
   git_rev: 3c1d3c9
 
 build:

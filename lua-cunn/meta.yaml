@@ -3,7 +3,7 @@ package:
   version: 0.1
 
 source:
-  git_url: git@github.com:alexbw/cunn.git
+  git_url: https://github.com/alexbw/cunn.git
   git_tag: master
   # git_rev: 71ca338
 

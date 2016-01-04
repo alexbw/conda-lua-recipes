@@ -3,7 +3,7 @@ package:
   version: 0.1
 
 source:
-  git_url: git@github.com:torch/threads-ffi.git
+  git_url: https://github.com/torch/threads-ffi.git
   git_rev: 2a5e2a6
 
 build:

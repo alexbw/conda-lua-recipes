@@ -3,7 +3,7 @@ package:
   version: 1.0
 
 source:
-  git_url: git@github.com:torch/class.git
+  git_url: https://github.com/torch/class.git
   git_rev: bc319dbafbfa825ab1f860d9ae95764edd96f829
 
 build:

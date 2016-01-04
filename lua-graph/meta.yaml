@@ -3,7 +3,7 @@ package:
   version: 0.1
 
 source:
-  git_url: git@github.com:torch/graph.git
+  git_url: https://github.com/torch/graph.git
   git_rev: d2f14f7
 
 build:

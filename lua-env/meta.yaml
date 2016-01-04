@@ -3,7 +3,7 @@ package:
   version: 1.0
 
 source:
-  git_url: git@github.com:torch/env.git
+  git_url: https://github.com/torch/env.git
   git_rev: 40d6fa037e52dca9eab161ab8f1e5496a52c3c1e
 
 build:

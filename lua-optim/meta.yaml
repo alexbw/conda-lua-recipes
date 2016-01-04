@@ -3,7 +3,7 @@ package:
   version: 1.0.5
 
 source:
-  git_url: git@github.com:torch/optim.git
+  git_url: https://github.com/torch/optim.git
   git_rev: e963a69
 
 build:

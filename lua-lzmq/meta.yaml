@@ -27,12 +27,14 @@ requirements:
     - luarocks
     - lua
     - lua-llthreads2
+    - zeromq
     # - lua-luaffi [not luajit]
 
   run:
     - luarocks
     - lua
     - lua-llthreads2
+    - zeromq
     # - lua-luaffi [not luajit]
 
 test:

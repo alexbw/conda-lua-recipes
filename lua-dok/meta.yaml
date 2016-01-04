@@ -3,7 +3,7 @@ package:
   version: 0.1
 
 source:
-  git_url: git@github.com:torch/dok.git
+  git_url: https://github.com/torch/dok.git
   git_rev: 2adabfa57361ff6783134d275cf5c0a6536620d3
 
 build:

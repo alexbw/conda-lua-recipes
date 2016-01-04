@@ -3,7 +3,7 @@ package:
   version: "0.1"
 
 source:
-  git_url: git@github.com:torch/sdl2-ffi.git
+  git_url: https://github.com/torch/sdl2-ffi.git
   # git_tag:  # can also be a branch, but that is highly discouraged
   git_rev: 2e4c9002be0cf523b3f28755b1cf855d3553677f # prefer tags over commits, commits over branches
   # md5:

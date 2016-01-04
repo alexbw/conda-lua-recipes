@@ -1,8 +1,8 @@
 FROM continuumio/miniconda
 
-# FROM ubuntu:14.04
+ENV PATH /opt/conda/lib:/opt/conda/include:$PATH
 RUN DEBIAN_FRONTEND=noninteractive apt-get update -y
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential libncurses5-dev libreadline-dev
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential libncurses5-dev libreadline-dev zip unzip
 RUN which conda
 RUN conda install pip patchelf anaconda-client -y
 ENV SRC /src

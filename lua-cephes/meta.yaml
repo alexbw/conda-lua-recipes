@@ -3,7 +3,7 @@ package:
   version: 0.1
 
 source:
-  git_url: git@github.com:deepmind/torch-cephes.git
+  git_url: https://github.com/deepmind/torch-cephes.git
   git_rev: f48310a
 
 build:

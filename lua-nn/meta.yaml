@@ -3,7 +3,7 @@ package:
   version: 0.1
 
 source:
-  git_url: git@github.com:torch/nn.git
+  git_url: https://github.com/torch/nn.git
   git_rev:  e82d8cb
 
 build:

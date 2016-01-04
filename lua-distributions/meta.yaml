@@ -3,7 +3,7 @@ package:
   version: 0.1
 
 source:
-  git_url: git@github.com:deepmind/torch-distributions.git
+  git_url: https://github.com/deepmind/torch-distributions.git
   git_rev: fb6dd52
 
 build:

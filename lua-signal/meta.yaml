@@ -3,7 +3,7 @@ package:
   version: 0.1
 
 source:
-  git_url: git@github.com:soumith/torch-signal.git
+  git_url: https://github.com/soumith/torch-signal.git
   git_rev: 94290c5
 
 build:

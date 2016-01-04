@@ -3,7 +3,7 @@ package:
   version: 1.0
 
 source:
-  git_url: git@github.com:soumith/fftw3-ffi.git
+  git_url: https://github.com/soumith/fftw3-ffi.git
   git_rev: ce8883364201b0741d3d51a0f305f457778a6671
 
 build:

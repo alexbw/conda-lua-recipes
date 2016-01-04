@@ -4,7 +4,7 @@ package:
 
 source:
   path: /Users/Alex/Code/terra
-  # git_url: git@github.com:zdevito/terra.git
+  # git_url: https://github.com/zdevito/terra.git
   # git_rev: 9f6478f
   # git_tag:  # can also be a branch, but that is highly discouraged
 

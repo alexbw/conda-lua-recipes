@@ -3,7 +3,7 @@ package:
   version: 0.1
 
 source:
-  git_url: git@github.com:deepmind/torch-hdf5.git
+  git_url: https://github.com/deepmind/torch-hdf5.git
   git_rev: d7e8a6d
 
 build:

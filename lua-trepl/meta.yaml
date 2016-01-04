@@ -3,7 +3,7 @@ package:
   version: 0.1
 
 source:
-  git_url: git@github.com:torch/trepl.git
+  git_url: https://github.com/torch/trepl.git
   git_rev: 1ae1458
 
 build:

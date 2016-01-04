@@ -3,7 +3,7 @@ package:
   version: 0.2
 
 source:
-  git_url: git@github.com:Tieske/uuid.git
+  git_url: https://github.com/Tieske/uuid.git
   git_tag: version_0.2.0
 
 build:
