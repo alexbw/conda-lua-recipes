@@ -1,4 +1,5 @@
 # Issues:
+# - readline on linux: lua 5.1 and 5.2 seem to be linking against system readline, instead of conda readline
 # - lua-luaffi doesn't build on 5.3 (https://github.com/facebook/luaffifb/issues/5)
 # - lua-sundown isn't compatible with 5.1 (goto keywords used, https://github.com/torch/sundown-ffi/issues/5)
 # - lua-crypto isn't compatible with 5.3 (there is a fork, see lua-crypto/build.sh)
