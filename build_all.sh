@@ -6,6 +6,7 @@
 # - lua-hdf5 doesn't work with PUC Lua b/c of a bug in luaffi (https://github.com/facebook/luaffifb/issues/4)
 # - lua-sdl2 only works with LuaJIT, depends on "jit" variable (https://github.com/torch/sdl2-ffi/issues/7)
 # - lua-lzmq has an ffi-only version. Should use that eventually.
+# - lua-trepl doesn't work with readline+luajit+linux.
 
 conda build lua-5.1.5 &&
 conda build lua-5.2.4 &&

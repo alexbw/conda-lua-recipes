@@ -16,20 +16,21 @@ requirements:
     - luarocks
     - lua-torch
     - lua-penlight
-    - readline
+    # - readline
   run:
     - lua
     - luarocks
     - lua-torch
     - lua-penlight
-    - readline
+    # - readline
 
 test:
   commands:
     - lua -e "require 'trepl'"
     - lua -e "require 'trepl.colors'"
     - lua -e "require 'trepl.colorize'"
-    - lua -e "require 'readline'"
+    # TODO: I'd like to remove this selector, but luajit+linux is funny with readline
+    - lua -e "require 'readline'" [not luajit or not unix]
     - lua -e "require 'treplutils'"
 
 about:
