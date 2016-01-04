@@ -1,5 +1,5 @@
 diff --git src/Makefile src/Makefile
-index e0d4c9f..ee5b28f 100644
+index e0d4c9f..5825eec 100644
 --- src/Makefile
 +++ src/Makefile
 @@ -7,6 +7,8 @@
@@ -22,8 +22,12 @@ index e0d4c9f..ee5b28f 100644
  MYLDFLAGS=
  MYLIBS=
  
-@@ -99,9 +103,9 @@ linux:
- 	$(MAKE) all MYCFLAGS=-DLUA_USE_LINUX MYLIBS="-Wl,-E -ldl -lreadline -lhistory -lncurses"
+@@ -96,12 +100,12 @@ generic:
+ 	$(MAKE) all MYCFLAGS=
+ 
+ linux:
+-	$(MAKE) all MYCFLAGS=-DLUA_USE_LINUX MYLIBS="-Wl,-E -ldl -lreadline -lhistory -lncurses"
++	$(MAKE) all MYLIBS="-Wl,-E -ldl -lreadline -lhistory -lncurses"
  
  macosx:
 -	$(MAKE) all MYCFLAGS=-DLUA_USE_LINUX MYLIBS="-lreadline"
@@ -34,6 +38,7 @@ index e0d4c9f..ee5b28f 100644
  
  mingw:
  	$(MAKE) "LUA_A=lua51.dll" "LUA_T=lua.exe" \
+
 diff --git src/luaconf.h src/luaconf.h
 index e2cb261..91ffb5a 100644
 --- src/luaconf.h

@@ -7,6 +7,7 @@ build:
 
 requirements:
   build:
+    - lua
     - luarocks
     - lua-cjson
     - lua-torch
@@ -33,6 +34,7 @@ requirements:
     - lua-itorch # this pulls in a ton of Python, maybe we don't want that?
 
   run:
+    - lua
     - luarocks
     - lua-cjson
     - lua-torch

@@ -7,7 +7,7 @@ source:
   url: http://www.lua.org/ftp/lua-5.1.5.tar.gz
   md5: 2e115fe26e435e33b0d5c022e4490567
   patches:
-    - update.patch
+    - update.patch [not win]
 
 build:
   number: 1
@@ -22,6 +22,7 @@ requirements:
 test:
   commands:
     - lua -v
+    - lua -e "print(package.path)"
 
 about:
   home: http://www.lua.org/
