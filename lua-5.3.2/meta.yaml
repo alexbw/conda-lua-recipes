@@ -15,9 +15,11 @@ build:
 
 requirements:
   build:
-    - readline [osx]
+    - readline
+    - ncurses
   run:
-    - readline [osx]
+    - readline
+    - ncurses
 
 test:
   commands:
