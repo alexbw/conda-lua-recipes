@@ -17,8 +17,10 @@ build:
 requirements:
   build:
     - readline
+    - ncurses
   run:
     - readline
+    - ncurses
 
 test:
   commands:
