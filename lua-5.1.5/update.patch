@@ -27,7 +27,7 @@ index e0d4c9f..5825eec 100644
  
  linux:
 -	$(MAKE) all MYCFLAGS=-DLUA_USE_LINUX MYLIBS="-Wl,-E -ldl -lreadline -lhistory -lncurses"
-+	$(MAKE) all MYLIBS="-Wl,-E -ldl -lreadline -lhistory -lncurses"
++	$(MAKE) all MYLIBS="-Wl,-E -ldl -lreadline -lhistory -lncursesw"
  
  macosx:
 -	$(MAKE) all MYCFLAGS=-DLUA_USE_LINUX MYLIBS="-lreadline"
