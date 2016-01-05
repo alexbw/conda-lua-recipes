@@ -25,6 +25,8 @@ Resources:
 
 * [Patching files with git diffs is finicky](http://unix.stackexchange.com/questions/1395/what-does-patch-unexpectedly-ends-in-middle-of-line-mean)
 
+* [Linking against readline](https://github.com/ContinuumIO/anaconda-issues/issues/42#issuecomment-39054576) (need a few extra flags, and link against -lncursesw, not -lncurses)
+
 
 Misc notes:
 ```
