@@ -15,9 +15,11 @@ build:
 
 requirements:
   build:
+    - luarocks
     - readline
     - ncurses
   run:
+    - luarocks
     - readline
     - ncurses
 
