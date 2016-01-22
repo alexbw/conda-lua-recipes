@@ -4,11 +4,7 @@ package:
 
 source:
   git_url: git://github.com/facebook/luaffifb.git
-  git_rev: 79c7dca # prefer tags over commits, commits over branches
-#  patches:
-   # List any patch files here
-   # - fix.patch
-
+  git_rev: d806f1ae30af77b2024d6c76868298db1b2980bc # lua53 branch
 build:
   # noarch_python: True
   # Useful to leave this on by default, will allow relocating
@@ -31,7 +27,7 @@ test:
   commands:
     # You can put test commands to be run here.  Use this to test that the
     # entry points work.
-
+    - lua -v
     - lua -e "require 'ffi'"
     - lua -e "require 'ffi.test'"
 

@@ -8,8 +8,7 @@ $PREFIX/bin/luarocks-admin make_manifest --local-tree
 # they tend to be top-level or in a rocks/ directory.
 # NOTE: we're just picking the first rock we find. If there's
 # more than one, specify it manually.
-ROCK=luaffi-scm-1.rockspec
-$PREFIX/bin/luarocks install "$ROCK" --local-tree
+$PREFIX/bin/luarocks make luaffi-scm-1.rockspec --local-tree
 
 # Add more build steps here, if they are necessary.
 
