@@ -1,0 +1,36 @@
+package:
+  name: lua-cudnn
+  version: 0.1
+
+source:
+  git_url: https://github.com/soumith/cudnn.torch
+  # git_tag: master
+  git_rev: 4fdde0a
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - lua-torch
+    - lua-cutorch
+    - lua-cunn
+    - lua-nn
+  run:
+    - lua
+    - lua-torch
+    - lua-cutorch
+    - lua-nn
+    - lua-cunn
+
+test:
+  commands:
+    - lua -e "require 'cudnn'"
+
+about:
+  home: https://github.com/torch/cudnn
+  license: BSD
+  summary: Torch7 FFI bindings for NVIDIA CuDNN kernels

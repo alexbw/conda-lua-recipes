@@ -4,6 +4,6 @@
 
 ./configure --prefix=$PREFIX \
 			--sysconfdir=$PREFIX/share/lua/ \
-			--with-lua-include=$LUA_INCLUDE_DIR \
+			--with-lua-include=$PREFIX/include \
 			--rocks-tree=$PREFIX
 make bootstrap

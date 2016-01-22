@@ -1,0 +1,34 @@
+package:
+  name: lua-stn
+  version: 0.1
+
+source:
+  git_url: https://github.com/qassemoquab/stnbhwd
+  git_rev: e706a98
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - lua-torch
+    - lua-cutorch
+    - lua-nn
+  run:
+    - lua
+    - luarocks
+    - lua-torch
+    - lua-cutorch
+    - lua-nn
+
+test:
+  commands:
+    - lua -e "require 'stn'"
+
+about:
+  home: https://github.com/qassemoquab/stnbhwd
+  license: MIT
+  summary: Spatial Transformer Networks for Torch

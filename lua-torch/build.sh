@@ -2,4 +2,4 @@
 $PREFIX/bin/luarocks-admin make_manifest --local-tree
 
 # Install torch
-$PREFIX/bin/luarocks install rocks/torch-scm-1.rockspec --local-tree
+$PREFIX/bin/luarocks make rocks/torch-scm-1.rockspec --local-tree LUA_INCDIR=$PREFIX/include
