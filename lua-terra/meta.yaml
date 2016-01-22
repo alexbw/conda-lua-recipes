@@ -5,8 +5,7 @@ package:
 source:
   path: /Users/Alex/Code/terra
   # git_url: https://github.com/zdevito/terra.git
-  # git_rev: 9f6478f
-  # git_tag:  # can also be a branch, but that is highly discouraged
+  # git_rev: 2a26c3e
 
 build:
   detect_binary_files_with_prefix: true
@@ -16,11 +15,11 @@ requirements:
   build:
    - lua >=2.0,<5
    - luarocks
-   - llvm-clang ==3.5.2
+   - llvm-clang ==3.6.2
   run:
    - lua >=2.0,<3
    - luarocks
-   - llvm-clang ==3.5.2
+   - llvm-clang ==3.6.2
 
 test:
   commands:

@@ -4,10 +4,13 @@ package:
   version: "3.5.2"
 
 source:
-  fn: clang+llvm-3.5.2-x86_64-apple-darwin.tar.xz [osx]
-  url: http://llvm.org/releases/3.5.2/clang+llvm-3.5.2-x86_64-apple-darwin.tar.xz [osx]
-  fn: clang+llvm-3.5.2-x86_64-linux-gnu-ubuntu-14.04.tar.xz [linux]
-  url: http://llvm.org/releases/3.5.2/clang+llvm-3.5.2-x86_64-linux-gnu-ubuntu-14.04.tar.xz [linux]
+  fn: llvm-3.5.2.src.tar.xz
+  url: http://llvm.org/releases/3.5.2/llvm-3.5.2.src.tar.xz
+  sha1: 85faf7cbd518dabeafc4d3f7e909338fc1dab3c4
+  # fn: clang+llvm-3.5.2-x86_64-apple-darwin.tar.xz [osx]
+  # url: http://llvm.org/releases/3.5.2/clang+llvm-3.5.2-x86_64-apple-darwin.tar.xz [osx]
+  # fn: clang+llvm-3.5.2-x86_64-linux-gnu-ubuntu-14.04.tar.xz [linux]
+  # url: http://llvm.org/releases/3.5.2/clang+llvm-3.5.2-x86_64-linux-gnu-ubuntu-14.04.tar.xz [linux]
   # patches:
     # From http://reviews.llvm.org/D6052
     # - llvm-elf-relocation.patch
@@ -16,11 +19,13 @@ build:
   number: 1
   detect_binary_files_with_prefix: true
 
-# requirements:
-#   build:
-#     - system           [linux and not armv7l]
-#   run:
-#     - system           [linux and not armv7l]
+requirements:
+  build:
+    - python
+    - system           [linux and not armv7l]
+  run:
+    - python
+    - system           [linux and not armv7l]
 
 test:
   commands:

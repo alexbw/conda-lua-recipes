@@ -1,13 +1,35 @@
+# clang works if I can compile dummy.cpp with the clang I use to compile Terra
+
 # Just move the binaries
-cp -R $SRC_DIR/* $PREFIX/
+# cp -R $SRC_DIR/* $PREFIX/
 
 # In case you wanted to build from source, it might
 # go something like this --
-# curl -O http://llvm.org/releases/3.5.2/cfe-3.5.2.src.tar.xz
-# tar -xf cfe-3.5.2.src.tar.xz
-# rm cfe-3.5.2.src.tar.xz
-# mv cfe-3.5.2.src tools/clang
+curl -O http://llvm.org/releases/3.5.2/cfe-3.5.2.src.tar.xz
+tar -xf cfe-3.5.2.src.tar.xz
+rm cfe-3.5.2.src.tar.xz
+mv cfe-3.5.2.src tools/clang
 # http://llvm.org/releases/3.5.2/openmp-3.5.2.src.tar.xz
+
+# ./configure --help
+
+# unset CC # make sure we're building with system clang!
+# unset CXX
+CC=clang
+CXX=clang++
+./configure \
+    --enable-pic \
+    --prefix=$PREFIX \
+    --enable-optimized \
+    --disable-docs \
+    --disable-terminfo \
+    --disable-libedit \
+    --prefix=$PREFIX \
+    --enable-libcpp \
+    --with-python=$PREFIX/bin/python
+
+make -j4
+make install
 
 # # Make the whole shebang
 # if [ -z "$MACOSX_DEPLOYMENT_TARGET" ]; then
@@ -38,5 +60,3 @@ cp -R $SRC_DIR/* $PREFIX/
 
 # fi
 
-# make -j4
-# make install
