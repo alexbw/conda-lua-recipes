@@ -24,7 +24,10 @@ requirements:
 
 test:
   commands:
+      # Test binary
       - echo "print('All good')" | terra -
+      # Test library
+      - lua -e "require 'terra'"
 
 about:
   home: https://github.com/zdevito/terra
