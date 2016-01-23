@@ -20,7 +20,7 @@ requirements:
 
 test:
   commands:
-      - terra -h
+      - echo "print('All good')" | terra -
 
 about:
   home: https://github.com/zdevito/terra

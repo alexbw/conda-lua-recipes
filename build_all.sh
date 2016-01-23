@@ -60,6 +60,5 @@ conda build lua-cudnn --lua=5.1 --lua=5.2 --lua=2.0
 conda build lua-stn --lua=5.1 --lua=5.2 --lua=2.0
 conda build lua-itorch --lua-5.2 --lua-2.0
 conda build lua-science --lua=5.2 --lua=2.0
-
-conda build llvm-clang-3.6.2 # for Terra, eventually
 conda build llvm-clang-3.5.2 # for Terra, now (CUDA features unsupported on 3.6)
+conda build lua-terra --lua=2.0
