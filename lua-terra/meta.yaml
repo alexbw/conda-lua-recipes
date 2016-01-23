@@ -3,9 +3,10 @@ package:
   version: 0.1
 
 source:
-  path: /Users/Alex/Code/terra
   # git_url: https://github.com/zdevito/terra.git
   # git_rev: cac78e6
+  git_url: https://github.com/alexbw/terra.git
+  git_rev: ab735d5
 
 build:
   detect_binary_files_with_prefix: true
