@@ -10,7 +10,7 @@ cp itorch_launcher $PREFIX/bin
 mkdir -p $PREFIX/share/jupyter/kernels/itorch
 cp kernelspec/* $PREFIX/share/jupyter/kernels/itorch/
 
-luarocks make
+$PREFIX/bin/luarocks make
 # cmake -E make_directory build && cd build && cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH="$(LUA_BINDIR)/.." -DCMAKE_INSTALL_PREFIX="$(PREFIX)" && $(MAKE)
 # cd build && make install
 # /$PREFIX/bin/luarocks make --local-tree # itorch-scm-1.rockspec --local-tree

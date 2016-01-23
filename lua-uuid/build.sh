@@ -2,4 +2,4 @@
 $PREFIX/bin/luarocks-admin make_manifest --local-tree
 
 # Install torch
-luarocks install uuid-0.2-1.rockspec --local-tree
+$PREFIX/bin/luarocks install uuid-0.2-1.rockspec --local-tree

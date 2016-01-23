@@ -8,7 +8,7 @@ $PREFIX/bin/luarocks-admin make_manifest --local-tree
 # they tend to be top-level or in a rocks/ directory.
 # NOTE: we're just picking the first rock we find. If there's
 # more than one, specify it manually.
-luarocks install https://raw.github.com/torch/sdl2-ffi/master/rocks/sdl2-scm-1.rockspec
+$PREFIX/bin/luarocks install https://raw.github.com/torch/sdl2-ffi/master/rocks/sdl2-scm-1.rockspec
 # ROCK=rocks/sdl2-scm-1.rockspec
 # $PREFIX/bin/luarocks install "$ROCK" --local-tree
 
