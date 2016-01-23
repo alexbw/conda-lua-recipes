@@ -7,5 +7,3 @@ $PREFIX/bin/luarocks-admin make_manifest --local-tree
 
 # Install torch
 luarocks make rocks/cutorch-scm-1.rockspec --local-tree
-
-open $PREFIX
