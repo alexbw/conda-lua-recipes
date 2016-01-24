@@ -1,8 +1,7 @@
 # Issues:
 # - lua-sundown isn't compatible with 5.1 (goto keywords used, https://github.com/torch/sundown-ffi/issues/5)
 # - lua-crypto isn't compatible with 5.3 (there is a fork, see lua-crypto/build.sh)
-# - lua-paths isn't compatible with 5.3 (https://github.com/torch/paths/issues/18)
-# - lua-hdf5 doesn't work with PUC Lua b/c of a bug in luaffi (https://github.com/facebook/luaffifb/issues/4)
+# - lua-paths isn't compatible with 5.3 (https://github.com/torch/paths/issues/18) (affects torch, and everything downstream)
 # - lua-sdl2 only works with LuaJIT, depends on "jit" variable (https://github.com/torch/sdl2-ffi/issues/7)
 # - lua-lzmq has an ffi-only version. Should use that eventually.
 # - lua-trepl doesn't work with readline+luajit+linux.
@@ -49,18 +48,18 @@ conda build lua-nn --lua=5.1 --lua=5.2 --lua=2.0 &&
 conda build lua-nngraph --lua=5.1 --lua=5.2 --lua=2.0 &&
 conda build lua-totem --lua=5.1 --lua=5.2 --lua=2.0 &&
 conda build lua-luabitop --lua=5.1 --lua=5.2 &&
-conda build lua-hdf5 --lua=2.0 &&
+conda build lua-hdf5  --lua=5.1 --lua=5.2 --lua=2.0 &&
 conda build lua-optim --lua=5.1 --lua=5.2 --lua=2.0 &&
 conda build lua-pprint --lua=5.1 --lua=5.2 --lua=2.0 &&
 conda build lua-signal --lua=5.1 --lua=5.2 --lua=2.0 &&
 conda build lua-nnx --lua=5.1 --lua=5.2 --lua=2.0 &&
-conda build lua-cutorch --lua=5.1 --lua=5.2 --lua=2.0 &&
 conda build llvm-clang-3.5.2 &&
 conda build lua-terra --lua=2.0 &&
 conda build lua-itorch --lua=5.2 --lua=2.0 &&
 conda build lua-science --lua=5.2 --lua=2.0
 
 # Contingent on CUDA
+conda build lua-cutorch --lua=5.1 --lua=5.2 --lua=2.0
 conda build lua-cunn --lua=5.1 --lua=5.2 --lua=2.0
 conda build lua-cudnn --lua=5.1 --lua=5.2 --lua=2.0
 conda build lua-stn --lua=5.1 --lua=5.2 --lua=2.0

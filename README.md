@@ -27,6 +27,8 @@ Resources:
 
 * [Linking against readline](https://github.com/ContinuumIO/anaconda-issues/issues/42#issuecomment-39054576) (need a few extra flags, and link against -lncursesw, not -lncurses)
 
+* [Upgrading old Debian](http://stackoverflow.com/questions/10863613/how-to-upgrade-glibc-from-version-2-13-to-2-15-on-debian/21254623#21254623). [Also this](https://github.com/jasonsanjose/brackets-sass/issues/53).
+
 
 Misc notes:
 ```
