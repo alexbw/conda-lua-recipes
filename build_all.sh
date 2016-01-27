@@ -59,7 +59,12 @@ conda build lua-itorch --lua=5.2 --lua=2.0 &&
 conda build lua-science --lua=5.2 --lua=2.0
 
 # Contingent on CUDA
-conda build lua-cutorch --lua=5.1 --lua=5.2 --lua=2.0
-conda build lua-cunn --lua=5.1 --lua=5.2 --lua=2.0
-conda build lua-cudnn --lua=5.1 --lua=5.2 --lua=2.0
-conda build lua-stn --lua=5.1 --lua=5.2 --lua=2.0
+path_to_nvcc=$(which nvcc)
+if [ -x "$path_to_nvcc" ]
+then
+    echo "Found CUDA on your machine. Installing CUDA packages"
+	conda build lua-cutorch --lua=5.1 --lua=5.2 --lua=2.0
+	conda build lua-cunn --lua=5.1 --lua=5.2 --lua=2.0
+	conda build lua-cudnn --lua=5.1 --lua=5.2 --lua=2.0
+	conda build lua-stn --lua=5.1 --lua=5.2 --lua=2.0
+fi

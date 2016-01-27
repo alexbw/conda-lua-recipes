@@ -5,8 +5,9 @@ package:
 source:
   # git_url: https://github.com/zdevito/terra.git
   # git_rev: cac78e6
+  # path: /Users/awiltschko/Code/terra
   git_url: https://github.com/alexbw/terra.git
-  git_rev: ab735d5
+  git_rev: d53f603
 
 build:
   detect_binary_files_with_prefix: true
