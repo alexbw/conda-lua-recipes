@@ -4,7 +4,7 @@ package:
 
 source:
   git_url: https://github.com/torch/torch7.git
-  git_rev: c05de78096a8f85f7de13000cc4b0b584299940d
+  git_rev: f056171b5187d6b8228af60ff8d840ff45ad0e93
 
 build:
   number: 1

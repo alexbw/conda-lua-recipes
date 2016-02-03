@@ -15,13 +15,15 @@ build:
 
 requirements:
   build:
-   - lua >=2.0,<5
+   - lua
    - luarocks
    - llvm-clang ==3.5.2
+   - lua-luaffi [not luajit]
   run:
-   - lua >=2.0,<3
+   - lua
    - luarocks
    - llvm-clang ==3.5.2
+   - lua-luaffi [not luajit]
 
 test:
   commands:

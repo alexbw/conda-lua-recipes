@@ -4,7 +4,7 @@ package:
 
 source:
   git_url: https://github.com/torch/sundown-ffi.git
-  git_rev: f631a979f644c571c801dc664ef10c2f56136882
+  git_rev: 743faf433ff69086f88b70ac98fcb0d9297b4cb1
 
 build:
   number: 1

@@ -4,7 +4,7 @@ package:
 
 source:
   git_url: https://github.com/torch/paths.git
-  git_rev: 3c0dc8f
+  git_rev: 68d579a2d3b1b0bb03a11637632e6e699b14ad80
 
 build:
   number: 1
