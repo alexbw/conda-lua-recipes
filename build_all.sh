@@ -60,10 +60,10 @@ path_to_nvcc=$(which nvcc)
 if [ -x "$path_to_nvcc" ]
 then
     echo "Found CUDA on your machine. Installing CUDA packages"
-	conda build lua-cutorch --lua=5.1 --lua=5.2 --lua=2.0 &&
-	conda build lua-cunn --lua=5.1 --lua=5.2 --lua=2.0 &&
-	conda build lua-cudnn --lua=5.1 --lua=5.2 --lua=2.0 &&
-	conda build lua-stn --lua=5.1 --lua=5.2 --lua=2.0
+	conda build lua-cutorch --lua="all" &&
+	conda build lua-cunn --lua="all" &&
+	conda build lua-cudnn --lua="all" &&
+	conda build lua-stn --lua="all"
 fi
 
 conda build llvm-clang-3.5.2 &&
