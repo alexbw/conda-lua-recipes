@@ -3,8 +3,8 @@ package:
   version: 0.3.2
 
 source:
-  git_url: https://github.com/mkottman/luacrypto.git
-  git_tag: 0.3.2
+  git_url: https://github.com/starius/luacrypto.git
+  git_rev: ab1caf241876466e928a5ccb7a99cfef81387730
 
 build:
   number: 0

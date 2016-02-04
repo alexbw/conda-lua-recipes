@@ -4,7 +4,7 @@ package:
 
 source:
   git_url: https://github.com/torch/threads-ffi.git
-  git_rev: 2a5e2a6
+  git_rev: 9e31123db00c8c8c437a3cba744576456de38731
 
 build:
   number: 1

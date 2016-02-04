@@ -1,8 +1,5 @@
 # Issues:
 # - lua-crypto isn't compatible with 5.3 (there is a fork, see lua-crypto/build.sh)
-# - lua-audio doesn't work with 5.3
-# - lua-threads doesn't work with 5.3
-# - lua-image doesn't work with 5.3
 # - lua-luabitop fails for 5.3
 # - lua-lzmq has an ffi-only version. Should use that eventually.
 # - lua-trepl doesn't work with readline+luajit+linux.
@@ -29,7 +26,7 @@ conda build lua-fftw3 --lua="all" &&
 conda build lua-sdl2 --lua="all" &&
 conda build lua-sundown --lua="all" &&
 conda build lua-class --lua="all" &&
-conda build lua-crypto --lua=5.1 --lua=5.2 --lua=2.0 &&
+conda build lua-crypto --lua="all" &&
 conda build lua-cwrap --lua="all" &&
 conda build lua-dok --lua="all" &&
 conda build lua-paths --lua="all" &&
@@ -37,12 +34,12 @@ conda build lua-torch --lua="all" &&
 conda build lua-sys --lua="all" &&
 conda build lua-xlua --lua="all" &&
 conda build lua-trepl --lua="all" &&
-conda build lua-audio --lua=5.1 --lua=5.2 --lua=2.0 &&
+conda build lua-audio --lua="all" &&
 conda build lua-gnuplot --lua="all" &&
 conda build lua-env --lua="all" &&
 conda build lua-graph --lua="all" &&
-conda build lua-threads --lua=5.1 --lua=5.2 --lua=2.0 &&
-conda build lua-image --lua=5.1 --lua=5.2 --lua=2.0 &&
+conda build lua-threads --lua="all" &&
+conda build lua-image --lua="all" &&
 conda build lua-cephes --lua="all" &&
 conda build lua-randomkit --lua="all" &&
 conda build lua-distributions --lua="all" &&
@@ -57,8 +54,8 @@ conda build lua-signal --lua="all" &&
 conda build lua-nnx --lua="all" &&
 conda build llvm-clang-3.5.2 &&
 conda build lua-terra --lua=2.0 &&
-conda build lua-itorch --lua=5.1 --lua=5.2 --lua=2.0 &&
-conda build lua-science --lua=5.2 --lua=2.0
+conda build lua-itorch --lua="all" &&
+conda build lua-science --lua="all"
 
 # Contingent on CUDA
 path_to_nvcc=$(which nvcc)
