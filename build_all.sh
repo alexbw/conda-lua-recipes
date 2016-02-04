@@ -52,8 +52,6 @@ conda build lua-optim --lua="all" &&
 conda build lua-pprint --lua="all" &&
 conda build lua-signal --lua="all" &&
 conda build lua-nnx --lua="all" &&
-conda build llvm-clang-3.5.2 &&
-conda build lua-terra --lua=2.0 &&
 conda build lua-itorch --lua="all" &&
 conda build lua-science --lua="all"
 
@@ -62,8 +60,11 @@ path_to_nvcc=$(which nvcc)
 if [ -x "$path_to_nvcc" ]
 then
     echo "Found CUDA on your machine. Installing CUDA packages"
-	conda build lua-cutorch --lua=5.1 --lua=5.2 --lua=2.0
-	conda build lua-cunn --lua=5.1 --lua=5.2 --lua=2.0
-	conda build lua-cudnn --lua=5.1 --lua=5.2 --lua=2.0
+	conda build lua-cutorch --lua=5.1 --lua=5.2 --lua=2.0 &&
+	conda build lua-cunn --lua=5.1 --lua=5.2 --lua=2.0 &&
+	conda build lua-cudnn --lua=5.1 --lua=5.2 --lua=2.0 &&
 	conda build lua-stn --lua=5.1 --lua=5.2 --lua=2.0
 fi
+
+conda build llvm-clang-3.5.2 &&
+conda build lua-terra --lua=2.0
