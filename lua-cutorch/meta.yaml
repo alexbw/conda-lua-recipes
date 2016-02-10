@@ -4,7 +4,7 @@ package:
 
 source:
   git_url: https://github.com/torch/cutorch.git
-  git_rev: 50bfa8d
+  git_rev: 8f01efe
 
 build:
   number: 1
