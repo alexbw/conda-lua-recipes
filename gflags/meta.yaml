@@ -1,0 +1,19 @@
+package:
+  name: gflags
+  version: 2.1.2
+
+source:
+  git_url: https://github.com/gflags/gflags.git
+  git_tag: master
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - cmake
+
+about:
+  home: https://gflags.github.io/gflags/
+  license: Apache

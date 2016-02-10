@@ -1,0 +1,1 @@
+scons DESTDIR=$PREFIX install

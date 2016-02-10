@@ -1,0 +1,19 @@
+package: jemalloc
+user: kalefranz
+
+platform:
+  - linux-64
+
+env:
+  - >
+    JEMALLOC_VERSION=3.6.0
+    JEMALLOC_HASH=e16c2159dd3c81ca2dc3b5c9ef0d43e1f2f45b04548f42db12e7c12d7bdf84fe
+
+before_script:
+  - conda update -n root conda-build
+
+script:
+  - conda build .
+
+build_targets:
+  - conda

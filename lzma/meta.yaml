@@ -1,0 +1,22 @@
+package:
+  name: lzma
+  version: 5.2.2
+
+source:
+  fn: xz-5.2.2.tar.gz
+  url: http://tukaani.org/xz/xz-5.2.2.tar.gz
+  md5: 7cf6a8544a7dae8e8106fdf7addfa28c
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - autoconf
+    - automake
+    - libtool
+
+about:
+  home: https://gflags.github.io/gflags/
+  license: Apache

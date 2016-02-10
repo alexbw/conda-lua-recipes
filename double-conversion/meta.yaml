@@ -1,0 +1,19 @@
+package:
+  name: double-conversion
+  version: 2.0.1
+
+source:
+  git_url: https://github.com/google/double-conversion.git
+  git_tag: v2.0.1
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - scons
+
+about:
+  home: https://github.com/google/double-conversion
+  license: Apache
