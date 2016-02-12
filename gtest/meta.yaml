@@ -1,0 +1,19 @@
+package:
+  name: gtest
+  version: 1.7.0
+
+source:
+  git_url: https://github.com/google/googletest.git
+  git_tag: release-1.7.0
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - cmake
+
+about:
+  home: https://github.com/google/googletest
+  license: Apache
