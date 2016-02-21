@@ -4,7 +4,7 @@ WORK IN PROGRESS
 
 ```
 # Install anaconda (instructions here for OS X)
-wget http://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+wget http://repo.continuum.io/miniconda/Miniconda-latest-MacOSX-x86_64.sh
 sh Miniconda-latest-MacOSX-x86_64.sh -b -p $HOME/anaconda
 
 # Install the correct version of conda-build (not pushed upstream yet)
