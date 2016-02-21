@@ -1,10 +1,8 @@
 # Conda recipes for installing packages from the Torch ecosystem.
 
-WORK IN PROGRESS
-
 ### To install packages (WARNING: this is in flux quite a bit, might not be current)
 ```
-# Install anaconda (instructions here for OS X)
+# Install anaconda if you don't have it (instructions here for OS X)
 wget http://repo.continuum.io/miniconda/Miniconda-latest-MacOSX-x86_64.sh
 sh Miniconda-latest-MacOSX-x86_64.sh -b -p $HOME/anaconda
 
@@ -17,7 +15,7 @@ conda install lua=5.2 lua-science -c alexbw
 
 ### To build packages
 ```
-# Install anaconda (instructions here for OS X)
+# Install anaconda if you don't have it (instructions here for OS X)
 wget http://repo.continuum.io/miniconda/Miniconda-latest-MacOSX-x86_64.sh
 sh Miniconda-latest-MacOSX-x86_64.sh -b -p $HOME/anaconda
 
