@@ -9,7 +9,7 @@ $PREFIX/bin/luarocks-admin make_manifest --local-tree
 # but lbase64 runs on version-specific tarballs. Luarocks takes care of
 # versioning this for us, so I'm not going to worry about it for now.
 # Plus, I believe this library is only used for iTorch, and nothing else.
-$PREFIX/bin/luarocks install lbase64 --local-tree
+$PREFIX/bin/luarocks install rockspecs/lbase64-scm-0.rockspec --local-tree --deps-mode=none
 
 
 # See
