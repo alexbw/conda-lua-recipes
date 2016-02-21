@@ -2,6 +2,20 @@
 
 WORK IN PROGRESS
 
+### To install packages (WARNING: this is in flux quite a bit, might not be current)
+```
+# Install anaconda (instructions here for OS X)
+wget http://repo.continuum.io/miniconda/Miniconda-latest-MacOSX-x86_64.sh
+sh Miniconda-latest-MacOSX-x86_64.sh -b -p $HOME/anaconda
+
+# Install Lua & Torch
+conda install lua=5.2 lua-science -c alexbw
+
+# Available versions of Lua: 2.0, 5.1, 5.2, 5.3
+# 2.0 is LuaJIT
+```
+
+### To build packages
 ```
 # Install anaconda (instructions here for OS X)
 wget http://repo.continuum.io/miniconda/Miniconda-latest-MacOSX-x86_64.sh
