@@ -7,7 +7,7 @@ WORK IN PROGRESS
 wget http://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 sh Miniconda-latest-MacOSX-x86_64.sh -b -p $HOME/anaconda
 
-# Install the correct versions of conda-build (not pushed upstream yet)
+# Install the correct version of conda-build (not pushed upstream yet)
 pip install git+https://github.com/alexbw/conda-build.git --upgrade --no-deps
 
 # Get the newest version of conda
