@@ -6,6 +6,9 @@
 wget http://repo.continuum.io/miniconda/Miniconda-latest-MacOSX-x86_64.sh
 sh Miniconda-latest-MacOSX-x86_64.sh -b -p $HOME/anaconda
 
+# Add anaconda to your $PATH
+export PATH=$HOME/anaconda/bin:$PATH
+
 # Install Lua & Torch
 conda install lua=5.2 lua-science -c alexbw
 
@@ -18,6 +21,9 @@ conda install lua=5.2 lua-science -c alexbw
 # Install anaconda if you don't have it (instructions here for OS X)
 wget http://repo.continuum.io/miniconda/Miniconda-latest-MacOSX-x86_64.sh
 sh Miniconda-latest-MacOSX-x86_64.sh -b -p $HOME/anaconda
+
+# Add anaconda to your $PATH
+export PATH=$HOME/anaconda/bin:$PATH
 
 # Install the correct version of conda-build (not pushed upstream yet)
 pip install git+https://github.com/alexbw/conda-build.git --upgrade --no-deps
