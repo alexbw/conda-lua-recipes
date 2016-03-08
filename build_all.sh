@@ -13,6 +13,7 @@ conda build luarocks --lua="all" &&
 conda build fftw &&
 conda build sox &&
 conda build sdl2 &&
+conda build lua-moses --lua="all" &&
 conda build lua-luafilesystem --lua="all" &&
 conda build lua-penlight --lua="all" &&
 conda build lua-luaffi --lua=5.1 --lua=5.2 --lua=5.3 &&
@@ -52,6 +53,8 @@ conda build lua-optim --lua="all" &&
 conda build lua-pprint --lua="all" &&
 conda build lua-signal --lua="all" &&
 conda build lua-nnx --lua="all" &&
+conda build lua-dpnn --lua="all" &&
+conda build lua-rnn --lua="all" &&
 conda build lua-itorch --lua="all" &&
 conda build lua-science --lua="all"
 

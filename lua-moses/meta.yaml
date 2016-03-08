@@ -1,0 +1,41 @@
+package:
+  name: lua-moses
+  version: 1.4.0
+
+source:
+  git_url: https://github.com/Yonaba/Moses.git
+  git_rev:  daf91d0
+build:
+  # noarch_python: True
+  # Useful to leave this on by default, will allow relocating
+  # packages that have hard-coded paths in them
+  detect_binary_files_with_prefix: true
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  number: 0
+
+requirements:
+  build:
+    - luarocks
+    - lua
+
+  run:
+    - luarocks
+    - lua
+
+test:
+  commands:
+    - lua -e "require 'moses'"
+    - lua -e "require 'moses_min'"
+
+  # You can also put a file called run_test.lua in the recipe that will be run
+  # at test time.
+
+about:
+  home: http://yonaba.github.com/Moses/
+  license: MIT
+  summary: Utility-belt library for functional programming in Lua
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

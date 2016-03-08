@@ -1,0 +1,36 @@
+package:
+  name: lua-dpnn
+  version: 0.1
+
+source:
+  git_url: https://github.com/Element-Research/dpnn
+  git_rev: 916ce25
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - lua-torch
+    - lua-nn
+    - lua-nnx
+    - lua-moses
+  run:
+    - lua
+    - luarocks
+    - lua-torch
+    - lua-nn
+    - lua-nnx
+    - lua-moses
+
+test:
+  commands:
+    - lua -e "require 'dpnn'"
+
+about:
+  home: https://github.com/Element-Research/dpnn
+  license: BSD
+  summary: deep extensions to nn Modules and Criterions

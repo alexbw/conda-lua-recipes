@@ -1,0 +1,32 @@
+package:
+  name: lua-rnn
+  version: 0.1
+
+source:
+  git_url: https://github.com/Element-Research/rnn
+  git_rev: c6ceaca
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - lua-nn
+    - lua-dpnn
+  run:
+    - lua
+    - luarocks
+    - lua-nn
+    - lua-dpnn
+
+test:
+  commands:
+    - lua -e "require 'rnn'"
+
+about:
+  home: https://github.com/Element-Research/rnn
+  license: BSD
+  summary: A Recurrent Neural Network library that extends Torch's nn
