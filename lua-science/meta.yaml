@@ -1,6 +1,6 @@
 package:
   name: lua-science
-  version: 1.0
+  version: 1.0.1
 
 build:
   number: 1
@@ -31,6 +31,7 @@ requirements:
     - lua-class
     - lua-argcheck
     - lua-penlight
+    - lua-autograd
     - lua-itorch # this pulls in a ton of Python, maybe we don't want that?
 
   run:
@@ -58,6 +59,7 @@ requirements:
     - lua-class
     - lua-argcheck
     - lua-penlight
+    - lua-autograd
     - lua-itorch # this pulls in a ton of Python, maybe we don't want that?
 
 about:

@@ -55,6 +55,7 @@ conda build lua-signal --lua="all" &&
 conda build lua-nnx --lua="all" &&
 conda build lua-dpnn --lua="all" &&
 conda build lua-rnn --lua="all" &&
+conda build lua-autograd --lua="all" &&
 conda build lua-itorch --lua="all" &&
 conda build lua-science --lua="all"
 
