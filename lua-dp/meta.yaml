@@ -1,0 +1,46 @@
+package:
+  name: lua-dp
+  version: 0.1
+
+source:
+  git_url: https://github.com/nicholas-leonard/dp.git
+  git_rev: f6bda09
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - lua
+    - luarocks
+    - lua-torch
+    - lua-optim
+    - lua-moses
+    - lua-nnx
+    - lua-dpnn
+    - lua-xlua
+    - lua-image
+    - lua-luafilesystem
+    - lua-torchx
+    - lua-sys
+  run:
+    - lua
+    - luarocks
+    - lua-torch
+    - lua-optim
+    - lua-moses
+    - lua-nnx
+    - lua-dpnn
+    - lua-xlua
+    - lua-image
+    - lua-luafilesystem
+    - lua-torchx
+    - lua-sys
+test:
+  commands:
+    - lua -e "require 'dp'"
+
+about:
+  home: https://github.com/nicholas-leonard/dp
+  summary: A deep learning library for the Torch7 distribution
