@@ -1,6 +1,6 @@
 # Conda recipes for installing packages from the Torch ecosystem.
 
-### To install packages (WARNING: this is in flux quite a bit, might not be current)
+### To install packages
 ```
 # Install anaconda if you don't have it (instructions here for OS X)
 wget http://repo.continuum.io/miniconda/Miniconda-latest-MacOSX-x86_64.sh
