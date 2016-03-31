@@ -1,0 +1,45 @@
+package:
+  name: folly
+  version: 0.57.0
+
+source:
+  git_url: https://github.com/facebook/folly.git
+  git_tag: v0.57.0
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - libtool
+    - autoconf
+    - automake
+    - gflags
+    - glog
+    - double-conversion
+    - boost
+    - libevent
+    - gtest
+    # - zlib1g # TODO?
+    # - sasl2 # TODO
+    # - numa [linux] # TODO
+    # - edit # TODO
+    # - matio # TODO
+    # - flex
+    # - bison
+    # - jemalloc
+    # - lzma
+    # - lz4
+    # - lzmq
+    # - snappy
+    # - zlib
+    # - krb5
+    # - pkg-config
+    # - openssl
+    # - python
+    # - numpy
+
+about:
+  home: https://github.com/facebook/folly
+  license: Apache
