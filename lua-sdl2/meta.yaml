@@ -26,13 +26,13 @@ requirements:
    - luarocks
    - sdl2
    - lua-luaffi [not luajit]
-   - lua-penlight [lua51]
+   - lua-penlight
   run:
    - lua
    - luarocks
    - sdl2
    - lua-luaffi [not luajit]
-   - lua-penlight [lua51]
+   - lua-penlight
 
 test:
   commands:
