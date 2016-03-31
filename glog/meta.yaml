@@ -3,8 +3,8 @@ package:
   version: 0.3.4
 
 source:
-  git_url: https://github.com/google/glog.git
-  git_tag: v0.3.4
+  url: https://github.com/google/glog/archive/v0.3.4.tar.gz
+  fn: v0.3.4.tar.gz
 
 build:
   number: 1
