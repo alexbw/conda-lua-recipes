@@ -12,7 +12,8 @@ build:
 
 requirements:
   build:
-    - scons
+    # - scons
+    - cmake
 
 about:
   home: https://github.com/google/double-conversion

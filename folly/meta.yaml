@@ -13,8 +13,8 @@ build:
 
 requirements:
   build:
-    # - gcc
-    - libtool
+    - gcc
+    - libtool  ==2.4.6
     - autoconf
     - automake
     - gflags
@@ -28,19 +28,19 @@ requirements:
     # - numa [linux] # TODO
     # - edit # TODO
     # - matio # TODO
-    # - flex
-    # - bison
+    - flex
+    - bison
     # - jemalloc
     # - lzma
-    # - lz4
+    - lz4
     # - lzmq
-    # - snappy
-    # - zlib
-    # - krb5
-    # - pkg-config
-    # - openssl
-    # - python
-    # - numpy
+    - snappy
+    - zlib
+    - krb5
+    - pkg-config
+    - openssl
+    - python
+    - numpy
 
 about:
   home: https://github.com/facebook/folly
