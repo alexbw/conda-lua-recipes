@@ -1,11 +1,10 @@
 package:
   name: lua-cunn
-  version: 0.1
+  version: 0.1.1
 
 source:
-  git_url: https://github.com/alexbw/cunn.git
-  git_tag: master
-  # git_rev: 71ca338
+  git_url: https://github.com/torch/cunn.git
+  git_rev: 7c6cdf0
 
 build:
   number: 0

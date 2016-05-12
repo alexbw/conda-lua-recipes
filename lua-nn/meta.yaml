@@ -1,10 +1,10 @@
 package:
   name: lua-nn
-  version: 0.1
+  version: 0.1.1
 
 source:
   git_url: https://github.com/torch/nn.git
-  git_rev:  e82d8cb
+  git_rev:  0e545aa
 
 build:
   number: 1

@@ -1,10 +1,10 @@
 package:
   name: lua-threads
-  version: 0.1
+  version: 0.1.1
 
 source:
   git_url: https://github.com/torch/threads-ffi.git
-  git_rev: 9e31123db00c8c8c437a3cba744576456de38731
+  git_rev: 628ab68
 
 build:
   number: 1

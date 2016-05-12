@@ -1,10 +1,10 @@
 package:
   name: lua-optim
-  version: 1.0.5
+  version: 1.0.6
 
 source:
   git_url: https://github.com/torch/optim.git
-  git_rev: e963a69
+  git_rev: e9af33b
 
 build:
   number: 1

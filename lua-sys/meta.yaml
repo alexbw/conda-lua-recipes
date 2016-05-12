@@ -1,10 +1,10 @@
 package:
   name: lua-sys
-  version: 1.1
+  version: 1.1.1
 
 source:
   git_url: https://github.com/torch/sys.git
-  git_rev: 77f10a2
+  git_rev: 8d2b8fa
 
 build:
   number: 1

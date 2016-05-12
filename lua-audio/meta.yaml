@@ -1,10 +1,10 @@
 package:
   name: lua-audio
-  version: 0.1
+  version: 0.1.1
 
 source:
   git_url: https://github.com/soumith/lua---audio.git
-  git_rev: b9f922a64b2e94c053b10e57c1312ee7ca9a4a3c
+  git_rev: e71fce7
 
 build:
   number: 1

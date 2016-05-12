@@ -1,10 +1,10 @@
 package:
   name: lua-sundown
-  version: 0.1
+  version: 0.1.1
 
 source:
   git_url: https://github.com/torch/sundown-ffi.git
-  git_rev: 743faf433ff69086f88b70ac98fcb0d9297b4cb1
+  git_rev: ab92c0c
 
 build:
   number: 1

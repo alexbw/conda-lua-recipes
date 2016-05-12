@@ -1,10 +1,10 @@
 package:
   name: lua-torch
-  version: 7.0
+  version: 7.0.2
 
 source:
   git_url: https://github.com/torch/torch7.git
-  git_rev: f056171b5187d6b8228af60ff8d840ff45ad0e93
+  git_rev: 02fb5bd
 
 build:
   number: 1

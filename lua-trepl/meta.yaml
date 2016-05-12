@@ -1,10 +1,10 @@
 package:
   name: lua-trepl
-  version: 0.1
+  version: 0.1.1
 
 source:
   git_url: https://github.com/torch/trepl.git
-  git_rev: 1ae1458
+  git_rev: f2d2f1a
 
 build:
   number: 1

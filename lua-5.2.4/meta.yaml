@@ -7,12 +7,15 @@ source:
   url: http://www.lua.org/ftp/lua-5.2.4.tar.gz
   md5: 913fdb32207046b273fdb17aad70be13
   patches:
+    # Enables Lua to look for packages on a relative path
     - luaconf.patch
+    # Enables readline on linux
     - Makefile.patch
 
 build:
-  number: 1
+  number: 0
   detect_binary_files_with_prefix: true
+  skip: True  # [win]
 
 requirements:
   build:
@@ -31,3 +34,7 @@ about:
   home: http://www.lua.org/
   summary: Lua is a powerful, fast, lightweight, embeddable scripting language
   license: MIT
+
+extra:
+  recipe-maintainers:
+    - alexbw

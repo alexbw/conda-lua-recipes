@@ -1,10 +1,10 @@
 package:
   name: lua-image
-  version: 1.1.0
+  version: 1.1.1
 
 source:
   git_url: https://github.com/torch/image.git
-  git_rev:  134f8590d768df47d0a5345e88b9de8e28715c82
+  git_rev: 95a7b55
 
 build:
   number: 1

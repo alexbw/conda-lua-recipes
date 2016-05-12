@@ -1,10 +1,10 @@
 package:
   name: lua-graph
-  version: 0.1
+  version: 0.2
 
 source:
   git_url: https://github.com/torch/graph.git
-  git_rev: d2f14f7
+  git_rev: 34d7128
 
 build:
   number: 1

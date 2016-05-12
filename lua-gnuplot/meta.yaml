@@ -1,10 +1,10 @@
 package:
   name: lua-gnuplot
-  version: 1.0
+  version: 1.0.1
 
 source:
   git_url: https://github.com/torch/gnuplot.git
-  git_rev: 3230b41
+  git_rev: 1955fb2
 
 build:
   number: 1

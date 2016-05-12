@@ -1,10 +1,10 @@
 package:
   name: lua-xlua
-  version: 1.1
+  version: 1.1.1
 
 source:
   git_url: https://github.com/torch/xlua.git
-  git_rev: 3c1d3c9
+  git_rev: 98c11ca
 
 build:
   number: 1
