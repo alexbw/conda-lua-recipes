@@ -1,10 +1,12 @@
+{% set version = "5.2.4" %}
+
 package:
   name: lua
-  version: 5.2.4
+  version: {{ version }}
 
 source:
-  fn: lua-5.2.4.tar.gz
-  url: http://www.lua.org/ftp/lua-5.2.4.tar.gz
+  fn: lua-{{ version }}.tar.gz
+  url: http://www.lua.org/ftp/lua-{{ version }}.tar.gz
   md5: 913fdb32207046b273fdb17aad70be13
   patches:
     # Enables Lua to look for packages on a relative path

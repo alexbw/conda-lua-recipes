@@ -15,10 +15,12 @@ requirements:
     - lua
     - luarocks
     - lua-luaffi [not luajit]
+    - lua-sundown
   run:
     - lua
     - luarocks
     - lua-luaffi [not luajit]
+    - lua-sundown
 
 test:
   commands:

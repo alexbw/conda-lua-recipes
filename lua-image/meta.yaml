@@ -4,7 +4,7 @@ package:
 
 source:
   git_url: https://github.com/torch/image.git
-  git_rev: 95a7b55
+  git_rev: 3ecdaf2
 
 build:
   number: 1

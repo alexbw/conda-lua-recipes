@@ -1,10 +1,10 @@
 package:
   name: lua-autograd
-  version: 0.1
+  version: 0.1.1
 
 source:
   git_url: https://github.com/twitter/torch-autograd.git
-  git_rev: fca2070
+  git_rev: 3d07934
 
 build:
   number: 1

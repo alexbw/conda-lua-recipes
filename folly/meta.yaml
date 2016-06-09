@@ -4,7 +4,8 @@ package:
 
 source:
   git_url: https://github.com/facebook/folly.git
-  git_rev: ef01f57
+  # git_rev: ef01f57
+  git_tag: master
   # git_tag: v0.57.0
 
 build:
@@ -14,7 +15,7 @@ build:
 requirements:
   build:
     - gcc
-    - libtool  ==2.4.6
+    - libtool  #  ==2.4.6
     - autoconf
     - automake
     - gflags

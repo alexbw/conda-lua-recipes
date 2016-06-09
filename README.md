@@ -39,6 +39,12 @@ sh build_all.sh
 conda install lua=5.2 lua-science
 ```
 
+TODO:
+ - https://github.com/AlexMili/torch-dataframe
+ - https://github.com/twitter/torch-ipc
+ - https://github.com/twitter/torch-distlearn
+ - https://github.com/twitter/torch-dataset
+
 Resources:
 
 * [Making packages relocatable (LuaJIT hard-codes path)](http://conda.pydata.org/docs/building/meta-yaml.html?highlight=prefix#making-packages-relocatable)
