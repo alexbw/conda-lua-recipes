@@ -4,8 +4,7 @@ package:
 
 source:
   git_url: https://github.com/alexbw/iTorch.git
-  git_rev: 4d8643a  # f7514fb75a84b7291c36c4467f8ba55eddac8c52
-  # path: /Users/Alex/Code/iTorch
+  git_rev: 4d8643a
 
 build:
   number: 1
