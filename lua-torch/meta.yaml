@@ -1,13 +1,13 @@
 package:
   name: lua-torch
-  version: 7.0.2
+  version: 7.0.3
 
 source:
   git_url: https://github.com/torch/torch7.git
-  git_rev: 02fb5bd
+  git_rev: 58b9acd
 
 build:
-  number: 1
+  number: 0
   detect_binary_files_with_prefix: true
 
 requirements:

@@ -1,13 +1,13 @@
 package:
   name: lua-torchx
-  version: 0.1
+  version: 0.1.1
 
 source:
   git_url: https://github.com/nicholas-leonard/torchx.git
-  git_rev: 81cae7a
+  git_rev: 06cdbd3
 
 build:
-  number: 1
+  number: 0
   detect_binary_files_with_prefix: true
 
 requirements:

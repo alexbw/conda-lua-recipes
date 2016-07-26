@@ -4,10 +4,10 @@ package:
 
 source:
   git_url: https://github.com/torch/cwrap.git
-  git_rev: be920f1f3829ec8c729950f064108442e1547132
+  git_rev: dbd0a623dc4dfb4b8169d5aecc6dd9aec2f22792 # be920f1f3829ec8c729950f064108442e1547132
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:

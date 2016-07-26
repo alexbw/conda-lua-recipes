@@ -1,10 +1,10 @@
 package:
   name: lua-autograd
-  version: 0.1.1
+  version: 0.1.2
 
 source:
   git_url: https://github.com/twitter/torch-autograd.git
-  git_rev: 3d07934
+  git_rev: 0b3ce31
 
 build:
   number: 1
@@ -13,19 +13,19 @@ build:
 requirements:
   build:
     - lua
+    - lua-penlight
     - luarocks
     - lua-torch
-    - lua-totem
     - lua-nn
     - lua-optim
     - cmake
   run:
     - lua
+    - lua-penlight
     - luarocks
     - lua-torch
     - lua-nn
     - lua-optim
-    - lua-totem
     - cmake
 
 test:

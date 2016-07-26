@@ -1,13 +1,13 @@
 package:
   name: lua-rnn
-  version: 0.1
+  version: 0.1.1
 
 source:
   git_url: https://github.com/Element-Research/rnn
-  git_rev: c6ceaca
+  git_rev: 6566544
 
 build:
-  number: 2
+  number: 0
   detect_binary_files_with_prefix: true
 
 requirements:

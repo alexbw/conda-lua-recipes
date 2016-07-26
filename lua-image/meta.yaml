@@ -1,13 +1,13 @@
 package:
   name: lua-image
-  version: 1.1.1
+  version: 1.1.2
 
 source:
   git_url: https://github.com/torch/image.git
-  git_rev: 3ecdaf2
+  git_rev: f319cc5 # 3ecdaf2
 
 build:
-  number: 1
+  number: 0
   detect_binary_files_with_prefix: true
 
 requirements:

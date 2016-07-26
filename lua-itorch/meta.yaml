@@ -1,6 +1,6 @@
 package:
   name: lua-itorch
-  version: 0.1
+  version: 0.1.1
 
 source:
   git_url: https://github.com/alexbw/iTorch.git
@@ -8,7 +8,7 @@ source:
   # path: /Users/Alex/Code/iTorch
 
 build:
-  number: 1
+  number: 0
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -24,7 +24,7 @@ requirements:
     - lua-image
     - lua-lzmq
     - lua-crypto
-    - jupyter
+    - ipython <5
     - notebook
     - zeromq
   run:
@@ -39,13 +39,14 @@ requirements:
     - lua-image
     - lua-lzmq
     - lua-crypto
-    - jupyter
+    - ipython <5
     - notebook
     - zeromq
 
 test:
   commands:
-    - lua -e "require 'itorch.util'"
+    - itorch --version
+    # - lua -e "require 'itorch.util'"
     # - lua -e "arg={'$1','$IO_PORTNUM'};require 'itorch.main'"
     # - lua -e "arg={'$1','$IO_STDO','$IO_PORTNUM'};require 'itorch.IOHandler'"
     # - lua -e "require 'itorch.IOHandler'"

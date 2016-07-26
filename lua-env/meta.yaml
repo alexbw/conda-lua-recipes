@@ -4,10 +4,10 @@ package:
 
 source:
   git_url: https://github.com/torch/env.git
-  git_rev: 40d6fa037e52dca9eab161ab8f1e5496a52c3c1e
+  git_rev: 832e9365e6a06fbdda863cffc2978c078d073029
 
 build:
-  number: 1
+  number: 2
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -21,8 +21,8 @@ requirements:
     - lua
     - luarocks
     - lua-torch
-    - lua-gnuplot
     - lua-dok
+    - lua-gnuplot
 
 test:
   commands:

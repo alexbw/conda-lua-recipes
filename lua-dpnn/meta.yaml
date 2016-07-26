@@ -1,13 +1,13 @@
 package:
   name: lua-dpnn
-  version: 0.1
+  version: 0.1.1
 
 source:
   git_url: https://github.com/Element-Research/dpnn
-  git_rev: 916ce25
+  git_rev: da974ff
 
 build:
-  number: 1
+  number: 0
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -15,6 +15,7 @@ requirements:
     - lua
     - luarocks
     - lua-torch
+    - lua-torchx
     - lua-nn
     - lua-nnx
     - lua-moses
@@ -22,6 +23,7 @@ requirements:
     - lua
     - luarocks
     - lua-torch
+    - lua-torchx
     - lua-nn
     - lua-nnx
     - lua-moses

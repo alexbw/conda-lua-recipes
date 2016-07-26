@@ -4,10 +4,10 @@ package:
 
 source:
   git_url: https://github.com/deepmind/torch-cephes.git
-  git_rev: f48310a
+  git_rev: f8a3a11
 
 build:
-  number: 1
+  number: 2
   detect_binary_files_with_prefix: true
 
 requirements:

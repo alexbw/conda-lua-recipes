@@ -37,4 +37,4 @@ $PREFIX/bin/luarocks make
 	# echo "c.Session.key = b''" >>$ipybase/profile_torch/ipython_config.py
 	# echo "c.Session.keyfile = b''" >>$ipybase/profile_torch/ipython_config.py
 
-# pre-unlink — remove the profile
+# pre-unlink — remove the profile

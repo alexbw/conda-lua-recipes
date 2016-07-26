@@ -4,10 +4,10 @@ package:
 
 source:
   git_url: https://github.com/torch/dok.git
-  git_rev: 2adabfa57361ff6783134d275cf5c0a6536620d3
+  git_rev:  1b36900 # 2adabfa57361ff6783134d275cf5c0a6536620d3
 
 build:
-  number: 1
+  number: 2
   detect_binary_files_with_prefix: true
 
 requirements:
