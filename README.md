@@ -25,12 +25,9 @@ sh Miniconda-latest-MacOSX-x86_64.sh -b -p $HOME/anaconda
 # Add anaconda to your $PATH
 export PATH=$HOME/anaconda/bin:$PATH
 
-# Install the correct version of conda-build (not pushed upstream yet)
-pip install git+https://github.com/alexbw/conda-build.git --upgrade --no-deps
-
-# Get the newest version of conda
+# Get the newest version of conda, as well as some conda build tools
 conda update conda -y
-conda install anaconda-client -y
+conda install conda-build anaconda-client -y
 
 # Build all packages
 sh build_all.sh
