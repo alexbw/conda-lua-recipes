@@ -1,13 +1,14 @@
 package:
   name: lua-cutorch
-  version: 7.0.1
+  version: 7.0.2
 
 source:
-  git_url: https://github.com/torch/cutorch.git
-  git_rev: 644d73d
+  # git_url: https://github.com/torch/cutorch.git
+  # git_rev: be1c2f8a57ff7d621c1c1ee962ea4d87a3b0dd58
+  path: /home/ubuntu/cutorch
 
 build:
-  number: 1
+  number: 0
   detect_binary_files_with_prefix: true
 
 requirements:

@@ -1,11 +1,10 @@
 package:
   name: lua-cudnn
-  version: 0.1
+  version: 0.1.1
 
 source:
   git_url: https://github.com/soumith/cudnn.torch
-  # git_tag: master
-  git_rev: 4fdde0a
+  git_rev: c3250a9
 
 build:
   number: 0

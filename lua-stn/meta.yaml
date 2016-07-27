@@ -1,13 +1,13 @@
 package:
   name: lua-stn
-  version: 0.1
+  version: 0.1.1
 
 source:
   git_url: https://github.com/qassemoquab/stnbhwd
-  git_rev: e706a98
+  git_rev: 88e7a83
 
 build:
-  number: 1
+  number: 0
   detect_binary_files_with_prefix: true
 
 requirements:

@@ -15,11 +15,11 @@ build:
 
 requirements:
   build:
-    - readline
-    - ncurses
+    - readline 6.2*
+    - ncurses 5.9*
   run:
-    - readline
-    - ncurses
+    - readline 6.2*
+    - ncurses 5.9*
 
 test:
   commands:
