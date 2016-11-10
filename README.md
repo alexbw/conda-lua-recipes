@@ -1,5 +1,7 @@
 # Conda recipes for installing packages from the Torch ecosystem.
 
+## NOTE: No longer maintained.
+
 ### To install packages
 ```
 # Install anaconda if you don't have it (instructions here for OS X)
